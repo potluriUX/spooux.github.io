@@ -1,0 +1,8 @@
+title: Potluri User Experience Design
+description: Awesome Designs
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
