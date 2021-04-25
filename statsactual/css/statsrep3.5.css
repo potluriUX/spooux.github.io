@@ -1,0 +1,59 @@
+
+/*Styles for Stats pages*/
+
+
+body   {font-family: Arial, san-serif; background-color: #FCE8A2; } 		
+H1    {font-size: 1.1em; font-weight: bold; color: #253AA8; margin-bottom: 0em; margin-top: 1em; }
+H2    {font-size: .9em; font-weight: bold;  color: #253AA8; margin-top: 0em; }                  
+p     {font-size: .8em; line-height: 1.75em; } 	
+
+p.inormal {font-size: .8em; line-height: 1.25em; }
+p.iabout {font-size: .85em; line-height: 1.25em; margin-left: 6px; font-style: italic;}
+p.ilist {line-height: 1.5em; }
+p.ienter {font-size: .9em; } 
+p.iincorrect {font-size: .9em; color: red; }		 
+p.iindent   {margin-left: 12px; line-height: 2.25em;}
+.icpyrght   {font-size: .75em; text-align: center; color: #333; } 		
+.ilineitem  {font-size: .85em; line-height: 1.1em; text-align: right; }
+.ibluelineitem  {font-size: .9em; line-height: 1.1em; text-align: left; color: #0033cc; margin-left: 65px; }
+
+.iproductitem   {font-size: .85em; line-height: 1.1em; text-align: left; margin-left: 5px; font-weight:bold; }
+.iblueproductitem  {font-size: .9em; line-height: 1.1em; text-align: left; color: #0033cc; margin-left: 5px; }
+.iserviceitem   {font-size: .85em; line-height: 1.1em; text-align: left; margin-left: 35px; }
+.ifeatureitem   {font-size: .85em; line-height: 1.1em; text-align: left; margin-left: 65px; }
+.ibluesearchitem  {font-size: .9em; line-height: 1.1em; text-align: left; color: #0033cc; margin-left: 35px; }
+
+
+.icolored /*tinted row*/  {background-color: #FDF2C5; } 		   
+.inumbers   {font-size: .9em; text-align: right; padding-right: 2em; }            
+.ibluenumbers   {font-size: .95em; text-align: center;  color: #253AA8; }            
+.iproductnumbers   {font-size: .9em; text-align: right; padding-right: 2em; font-weight:bold; }            
+
+.iheaders   {font-size: .75em;  text-align: center;  background-color: #FDF2C5; }         
+.iheads	 {font-size: .8em; font-weight: bold; text-align: center;  background-color: #FDF2C5; }     
+.icolorule	{border-color: #FC6; border-width: 1px; border-style: solid thin; }
+hr {border-style: solid thin; color: #999; }		
+div.iright    {text-align: right; margin-bottom: .75em;  }
+div.idrop	{margin-top: 1.25em; }
+.iwhite 	{background-color: #ffffff; }  	
+.iwhitemiddle	{background-color: #ffffff; text-align: center; }  	
+.itop      {vertical-align: top;	 }
+.ibttm     {vertical-align: bottom;	 }
+a:link    {font-size: .85em; color: #253AA8; line-height: 1.2em; }					
+a:active	{font-size: .85em; color: #0000FF; line-height: 1.2em; }		
+a:visited   {font-size: .85em; color: #9900CC; line-height: 1.2em; }
+
+
+a.isessions:link    {font-size: .8em; color: #253AA8; line-height: 3em; }					
+a.isessions:active	{font-size: .8em; color: #0000FF; line-height: 3em; }		
+a.isessions:visited   {font-size: .8em; color: #9900CC; line-height: 3em; }
+
+
+
+a.iabout2:link    {color: #253AA8; font-size: .99em;}					
+a.iabout2:active	{color: #0000FF; font-size: .99em; }		
+a.iabout2:visited   {color: #9900CC; font-size: .99em;}
+
+div.indent1	{margin-left: 16px;}
+div.indent2	{margin-left: 32px;}
+

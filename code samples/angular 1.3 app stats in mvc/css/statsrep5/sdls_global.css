@@ -1,0 +1,54 @@
+.smallWidth {
+    width: 900px;
+    height:400px;
+    background: yellow;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1260px;
+    min-width: 780px;
+    width: 65%;
+}
+
+.tabGrp {
+    margin: 0 auto;
+    width: 900px;
+}
+
+#loginPg .btn {
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 8px;
+}
+
+#rptData .dataTbl.totUsgTbl tr td {
+    background: #f2f97f none repeat scroll 0 0;
+    border-color: #b3d6f2;
+}
+
+
+/*<!--
+
+.smallWidth {
+    width: 1000px;
+    height:400px;
+    background: yellow;
+}
+
+
+#loginPg .btn {
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 8px;
+}
+
+#rptData .dataTbl.totUsgTbl tr td {
+    background: #f2f97f none repeat scroll 0 0;
+    border-color: #b3d6f2;
+}*/
+
+

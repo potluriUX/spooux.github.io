@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Baumans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Baumans'), local('Baumans-Regular'), url(https://fonts.gstatic.com/s/baumans/v5/wUCl3MlBd3lTlYyjq93hYg.woff2) format('woff2'), url(https://fonts.gstatic.com/s/baumans/v5/3DEdKAl82M5rDSLBVcU5jA.woff) format('woff');
+}

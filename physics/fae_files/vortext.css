@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* Why toast when you can roast? */
+
+@import url("vortex.css");
+
+/* Brown for first course. White for pudding. */
+
+html, body {
+  border: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  font-size: 0.125in;
+  margin:    0.000in;
+  padding:   0.000in;
+}
+
+body {
+  margin:    auto;
+  width:     6.500in;
+}
+
+.head1, .head2,         .head4, 
+.foot4,         .foot3, .foot1,
+.amazon, .share,
+.greymatter, .donotprint {
+  display: none !important;
+}
+
+h1 { margin-top: 0.000in; padding-top: 0.000in; }
+
+h1, h2, h3, h4, h5, th {
+  page-break-after: avoid;
+}
+table, td, th {
+  page-break-inside: avoid;
+}
+
+/* Brown is savoury. White's the treat. */
+
+h1, h2, .title, .subtitle {
+  text-shadow: none !important;
+}
+
+p.inline                 { width: 32em; }
+p.inline embed           { width: 32em; height: 18em; }
+p.inline img             { width: auto; height: 18em; }
+
+.aetofdr,
+.amazon,
+.entry .amzn_wdgt,
+.bar,
+blockquote,
+.quoteblock,
+img,
+embed,
+.problembox,
+table.archaic,
+table.piano,
+table.vibrant { box-shadow: none; }
+
+/* No condition is permanent. */

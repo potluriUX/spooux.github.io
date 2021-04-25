@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Sketch Regular'), local('CabinSketch-Regular'), url(https://fonts.gstatic.com/s/cabinsketch/v8/d9fijO34zQajqQvl3YHRCegdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), url(https://fonts.gstatic.com/s/cabinsketch/v8/d9fijO34zQajqQvl3YHRCXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: 700;
+  src: local('CabinSketch Bold'), local('CabinSketch-Bold'), url(https://fonts.gstatic.com/s/cabinsketch/v8/ki3SSN5HMOO0-IOLOj069HNuWYKPzoeKl5tYj8yhly0.woff2) format('woff2'), url(https://fonts.gstatic.com/s/cabinsketch/v8/ki3SSN5HMOO0-IOLOj069Hl4twXkwp3_u9ZoePkT564.woff) format('woff');
+}

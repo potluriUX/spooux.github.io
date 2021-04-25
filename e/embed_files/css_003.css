@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Bowlby One SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bowlby One SC Regular'), local('BowlbyOneSC-Regular'), url(https://fonts.gstatic.com/s/bowlbyonesc/v8/8ZkeXftTuzKBtmxOYXoReUcyF0ms21OVlsdkK-jCtv8.woff2) format('woff2'), url(https://fonts.gstatic.com/s/bowlbyonesc/v8/8ZkeXftTuzKBtmxOYXoReXSZ6Kd_eOJbDsY1hLBynIs.woff) format('woff');
+}
