@@ -88,8 +88,8 @@
         <div class="home-text">
             <p> Design and Share for events, invitations, business, offers, microcontent maker
  <a href="http://thunderify.com/e/embed.htm" style="color:white">website</a>.</p>
-          <a href="http://thunderify.com/e/embed.htm" class="btn btn-empty">Go to App</a>
-          <a href="http://thunderify.com/fake/fakewha.htm" class="btn btn-empty">Go to App</a>
+          <a href="http://thunderify.com/e/embed.htm" class="btn btn-empty">Flyer Maker</a>
+          <a href="http://thunderify.com/fake/fakewha.htm" class="btn btn-empty">Fake Whatsapp</a>
         </div>
       </div>
     </div>
@@ -615,7 +615,7 @@
     <div class="container">
         
       <div class="col-xs-6">
-           <div style="color:white">Norwalk,CT</div>
+           <div style="color:white">Boston, MA</div>
            <div style="color:white">Contact: admin@rlabscomapany.us/max.tejada@thunderify.com</div>
            <div style="color:white">Our partner <a href='http://ioswhatsappfaketext.com'>iosfaketext</a></div>
            <div style="color:white">Our app <a href='http://www.amazon.com/R-Labs-IOSTextPrank-fake-conversation/dp/B018RIVYKQ/ref=sr_1_sc_1?ie=UTF8&qid=1451325316&sr=8-1-spell&keywords=iostext'>
