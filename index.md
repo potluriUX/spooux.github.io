@@ -138,7 +138,7 @@
 <!--                       <i class="fa fa-usd"> </i>-->
                 </div><div class="home_res_title"><h4> <a href="http://www.amazon.com/R-Labs-Thunderify-pro/dp/B011M930VI/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1437577163&sr=1-1&keywords=thunderify+pro" class="btn btn-primary createProBtn">Go Thunderify Pro</a><br>
                        </h4></div>
-             <a href="http://www.amazon.com/R-Labs-Thunderify-pro/dp/B011M930VI/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1437577163&sr=1-1&keywords=thunderify+pro" class="btn btn-primary createProBtn">Buy</a> thunderify pro version Remove our watermark & create beautiful branded images. When you post an image it is 150% more likely to be reshared, more users. Pro has PDF generation also for putting on boards</div>
+            Thunderify flyer pro version Remove our watermark & create beautiful branded images. When you post an image it is 150% more likely to be reshared, more users. Pro has PDF generation also for putting on boards</div>
          
 </a>
         </div>
@@ -159,15 +159,9 @@
         </div>
         </div>
           
-<!--        <div class="feature right animated" data-animation="fadeInRight" data-animation-delay="0">
-          <div class="feature-icon">
-            <i class="fa fa-bitbucket"></i>
-          </div>
-          <h4>Test Driven Development(TDD)</h4>
-          <p>We use Jasmine,Karma for TDD to write 100% bug free code.</p>
-        </div>-->
+
      
-    </div>
+  
   </section>
 
 <!--  <section id="about" class="grey">
