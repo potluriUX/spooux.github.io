@@ -98,7 +98,7 @@
   <section id="features">
     <div class="container">
       <div class="section-title">
-        <h2>Welcome to Thunderify</h2>        
+          
 <!--        <p>Sed feugiat, nisl sit amet pellentesque dignissim, nisi tellus semper tortor.</p>-->
       </div>
       <div class="col-md-6 col-sm-6">
