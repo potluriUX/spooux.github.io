@@ -617,7 +617,7 @@
         
       <div class="col-xs-6">
            <div style="color:white">Norwalk,CT</div>
-           <div style="color:white">Contact: admin@rlabscomapany.us/max@thunderify.com</div>
+           <div style="color:white">Contact: admin@rlabscomapany.us/max.tejada@thunderify.com</div>
            <div style="color:white">Our partner <a href='http://ioswhatsappfaketext.com'>iosfaketext</a></div>
            <div style="color:white">Our app <a href='http://www.amazon.com/R-Labs-IOSTextPrank-fake-conversation/dp/B018RIVYKQ/ref=sr_1_sc_1?ie=UTF8&qid=1451325316&sr=8-1-spell&keywords=iostext'>
           Android App     </a>
