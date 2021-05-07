@@ -621,7 +621,7 @@
            <div style="color:white">Our app <a href='http://www.amazon.com/R-Labs-IOSTextPrank-fake-conversation/dp/B018RIVYKQ/ref=sr_1_sc_1?ie=UTF8&qid=1451325316&sr=8-1-spell&keywords=iostext'>
           Android App     </a>
                                                    
-                                   "
+                                   
            <ul class="social">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
