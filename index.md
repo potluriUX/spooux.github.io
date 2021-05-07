@@ -70,13 +70,7 @@
     <ul class="slides">
    
       
-   <li><img src="http://demo.codepark.co/kepler/images/bg/1.jpg" alt=""></li>
-   <li><img src="http://demo.codepark.co/kepler/images/bg/2.jpg" alt=""></li>
-      <li><img src="./rlabs/Kepler/2_0021.jpg" alt=""></li>
-         <li><img src="./rlabs/Kepler/3_00201.jpg" alt=""></li>
-      <li><img src="./rlabs/Kepler/4_0021.jpg" alt=""></li>
-      <li><img src="./rlabs/Kepler/71.jpg" alt=""></li>
-       <li><img src="./rlabs/Kepler/81.jpg" alt=""></li>
+  
     </ul>
   </div>
   <!-- End Backgrounds -->
