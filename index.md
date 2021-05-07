@@ -149,6 +149,7 @@
           <h4>Microcontent</h4>
           <p>Get lot of social media engagement and drive more traffic back to your website. Images get more clickson links than text-based posts.</p>
         </div>
+         </div>
         <div class="feature right animated" data-animation="fadeInRight" data-animation-delay="0">
         <div class="feature-icon">
             <i class="fa fa-bitbucket"></i>
@@ -165,7 +166,7 @@
           <h4>Test Driven Development(TDD)</h4>
           <p>We use Jasmine,Karma for TDD to write 100% bug free code.</p>
         </div>-->
-      </div>
+     
     </div>
   </section>
 
