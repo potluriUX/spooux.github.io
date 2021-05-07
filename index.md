@@ -84,7 +84,7 @@
         </div>
         <div id="home-slider" class="flexslider">             
           
-        <div style="overflow: hidden; position: relative; height: 116px;" class="flex-viewport"><ul style="height: 800%; position: absolute; width: 100%; top: -116px;" class="slides"><li style="display: block;" class="clone"><h1>Flyer Maker</h1></li>
+        <div style="overflow: hidden; position: relative; height: 116px;" class="flex-viewport"><ul style="height: 400%; position: absolute; width: 100%; top: -116px;" class="slides"><li style="display: block;" class="clone"><h1>Flyer Maker</h1></li>
             <li class="" style="display: block;"><h1>Thunderify</h1></li>         
             <li class="flex-active-slide" style="display: block;"><h1>Micro Content</h1></li>
           <li class="clone" style="display: block;"><h1>Thunderify</h1></li></ul></div></div>
