@@ -86,8 +86,8 @@
           
      
         <div class="home-text">
-            <p> Design and Share for events, invitations, business, offers, microcontent maker.
- <a href="http://thunderify.com/e/embed.htm" style="color:blue">website</a>.</p>
+            <p> Design and Share for events, invitations, business, offers, microcontent maker
+ <a href="http://thunderify.com/e/embed.htm" style="color:white">website</a>.</p>
           <a href="http://thunderify.com/e/embed.htm" class="btn btn-empty">Go to App</a>
           <a href="http://thunderify.com/fake/fakewha.htm" class="btn btn-empty">Go to App</a>
         </div>
