@@ -84,10 +84,7 @@
         </div>
         <div id="home-slider" class="flexslider">             
           
-        <div  class="flex-viewport"><ul style="" class="slides"><li style="display: block;" class="clone"><h1>Flyer Maker</h1></li>
-            <li class="" style="display: block;"><h1>Thunderify</h1></li>         
-            <li class="flex-active-slide" style="display: block;"><h1>Micro Content</h1></li>
-          <li class="clone" style="display: block;"><h1>Thunderify</h1></li></ul></div></div>
+     
         <div class="home-text">
             <p> Design and Share for events, invitations, business, offers, microcontent maker.
  <a href="http://thunderify.com/e/embed.htm" style="color:blue">website</a>.</p>
