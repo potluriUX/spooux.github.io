@@ -48,18 +48,14 @@
         <ul class="nav navbar-nav" id="nav">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-<!--          <li><a href="#team">Team</a></li>-->
-<!--          <li><a href="#services">Services</a></li> -->
-<!--          <li><a href="#pricing">Pricing</a></li>-->
+
           <li><a href="#portfolio">Portfolio</a></li>
-<!--          <li><a href="#contact">Contact</a></li>-->
+
         </ul>
       </div>
     </div>
   </header>
-  <!-- End Header -->
 
-  <!-- Preloader -->
   <div style="display: none;" id="mask">
     <div style="display: none;" class="spinner">
       <div class="rect1"></div>
@@ -69,15 +65,13 @@
       <div class="rect5"></div>
     </div>
   </div>
-  <!-- End Preloader -->
 
-  <!-- Backgrounds -->
   <div id="backgrounds">
     <ul class="slides">
    
       
    <li><img src="http://demo.codepark.co/kepler/images/bg/1.jpg" alt=""></li>
-   <li><img src="http://demo.codepark.co/kepler/images/bg/2.jpg" alt=""></li>-->
+   <li><img src="http://demo.codepark.co/kepler/images/bg/2.jpg" alt=""></li>
       <li><img src="./rlabs/Kepler/2_0021.jpg" alt=""></li>
          <li><img src="./rlabs/Kepler/3_00201.jpg" alt=""></li>
       <li><img src="./rlabs/Kepler/4_0021.jpg" alt=""></li>
