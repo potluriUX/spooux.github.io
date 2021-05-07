@@ -151,9 +151,7 @@
         </div>
          </div>
         <div class="feature right animated" data-animation="fadeInRight" data-animation-delay="0">
-        <div class="feature-icon">
-            <i class="fa fa-bitbucket"></i>
-          </div>
+     
           <h4>Fake whatsapp generator</h4>
           <p> Create funny whatsapp chats that almost look real!</p>
         </div>
