@@ -84,7 +84,7 @@
         </div>
         <div id="home-slider" class="flexslider">             
           
-        <div style="overflow: hidden; position: relative; height: 116px;" class="flex-viewport"><ul style="height: 400%; position: absolute; width: 100%; top: -116px;" class="slides"><li style="display: block;" class="clone"><h1>Flyer Maker</h1></li>
+        <div style="overflow: hidden; position: relative; height: 116px;" class="flex-viewport"><ul style="" class="slides"><li style="display: block;" class="clone"><h1>Flyer Maker</h1></li>
             <li class="" style="display: block;"><h1>Thunderify</h1></li>         
             <li class="flex-active-slide" style="display: block;"><h1>Micro Content</h1></li>
           <li class="clone" style="display: block;"><h1>Thunderify</h1></li></ul></div></div>
@@ -92,6 +92,7 @@
             <p> Design and Share for events, invitations, business, offers, microcontent maker.
  <a href="http://thunderify.com/e/embed.htm" style="color:blue">website</a>.</p>
           <a href="http://thunderify.com/e/embed.htm" class="btn btn-empty">Go to App</a>
+          <a href="http://thunderify.com/fake/fakewha.htm" class="btn btn-empty">Go to App</a>
         </div>
       </div>
     </div>
@@ -150,6 +151,12 @@
           </div>
           <h4>Microcontent</h4>
           <p>Get lot of social media engagement and drive more traffic back to your website. Images get more clickson links than text-based posts.</p>
+        </div>
+        <div class="feature-icon">
+            <i class="fa fa-bitbucket"></i>
+          </div>
+          <h4>Fake whatsapp generator</h4>
+          <p> Create funny whatsapp chats that almost look real!</p>
         </div>
           
 <!--        <div class="feature right animated" data-animation="fadeInRight" data-animation-delay="0">
