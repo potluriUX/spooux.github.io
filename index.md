@@ -80,7 +80,7 @@
       <div class="slide-middle">
         <div class="slide-intro">
           <h3>Welcome</h3> 
-          <hr>
+        
         </div>
         <div id="home-slider" class="flexslider">             
           
