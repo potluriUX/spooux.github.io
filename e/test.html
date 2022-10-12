@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo</title>
+  
+  <script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'></script>
+  
+  
+  
+  
+ 
+  
+  <style type='text/css'>
+    
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+     var configsource=["namefthumbnailimg"];
+     var configsource2=["namefimg"];//if plain then configsource == configsource2 
+     ////and it is Name/image.png or image/jpg
+   // var configres="sales_10.png";
+    
+var thumbs = 
+   {"id":"999102","created":"1414761239","updated":"1436180005","status":"open","type":"default","userId":"2991","publisherId":"0","sourceImageId":"445200","numberOfRemixes":"186","publicKey":"1bb6e464","s3Filename":"1414761239-1bb6e464-86be.jpg","sourceUrl":"","documentJson":"{\"layers\":[{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#ffffff\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Cabin Sketch\",\"fontSize\":\"54px\",\"fontStyle\":\"normal\",\"text\":\"it's betterj \\nto be good\\n than lucky\",\"x\":\"23.64%\",\"y\":\"19.25%\",\"maxWidth\":470,\"strokeStyle\":\"#65a386\",\"strokeWidth\":7,\"rounded\":true},\"type\":\"text\"},{\"isBackground\":true,\"type\":\"image\",\"filters\":[],\"sourceSrc\":\"http://res.cloudinary.com/do7w0q9iq/image/upload/v1436625522/sales_10.png\",\"resizedSrc\":\"http://res.cloudinary.com/do7w0q9iq/image/upload/c_lfill,h_385,w_495/v1436625522/sales_10.png\",\"styles\":{\"height\":385,\"width\":495,\"x\":0,\"y\":0}}]}","text":"Event Title \nDate\n than lucky","hasBeenFlagged":"0","hasBeenDeleted":"0","hasHighDef":"1","createdIPAddress":"99.238.86.213","totalViews":"0","redirectUrl":"","stat-embedType":"modal","stat-flow":"chromeExtension","secondsToCreate":"30","isUserTemplate":"0","isGlobalTemplate":"1","globalTemplateOrder":"100","cloudfrontUrl":"http://res.cloudinary.com/do7w0q9iq/image/upload/v1436539010/thunderify/Sales/10.png","displayUrl":"http://res.cloudinary.com/do7w0q9iq/image/upload/v1436625522/sales_10.png","path":"/i/1bb6e464","url":"https://shareasimage.com/i/1bb6e464"}
+
+
+  
+
+              
+
+;
+
+
+var str;
+for(i=0;i<
+    configsource.length;i++)
+   
+   {
+       var documentJson=$.parseJSON(thumbs.documentJson);
+      var resizedSrc =  $.parseJSON(thumbs.documentJson)['layers']['1']['resizedSrc'];
+      var sourceSrc =  $.parseJSON(thumbs.documentJson)['layers']['1']['sourceSrc'];
+           documentJson['layers']['1']['resizedSrc'] = "http://res.cloudinary.com/do7w0q9iq/image/upload/c_lfill,h_385,w_495/v1436625522/"+configsource[i];
+            documentJson['layers']['1']['sourceSrc'] = "http://res.cloudinary.com/do7w0q9iq/image/upload/" +configsource[i];
+            thumbs.documentJson = JSON.stringify(documentJson);
+            thumbs.cloudfrontUrl = "http://res.cloudinary.com/do7w0q9iq/image/upload/thunderify/" + configsource2[i]
+           thumbs.displayUrl = "http://res.cloudinary.com/do7w0q9iq/image/upload/thunderify/" + configsource2[i]
+           
+            console.log(JSON.stringify(thumbs))
+    //str = str + "<img src='"+ thumbs[i].cloudfrontUrl+"'></img>";
+       
+       }
+  //  console.log(JSON.stringify(thumbs[0]));
+    $( document ).ready(function() {
+    
+//console.log(str);
+    //$("#images").html(str);
+});
+
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <div id="images"></div>
+  
+</body>
+
+
+</html>
+
+<!--
+
+
+
+
+
+
+
+var cx = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
+   var escapable = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
+var    meta = { 
+        '\b': '\\b',
+        '\t': '\\t',
+        '\n': '\\n',
+        '\f': '\\f',
+        '\r': '\\r',
+        '"' : '\\"',
+        '\\': '\\\\'
+    };
+
+function json_quote(string) {
+  escapable.lastIndex = 0;
+  return escapable.test(string) ? '"' + string.replace(escapable, function (a) {
+      var c = meta[a];
+      return typeof c === 'string' ? c :
+          '\\u' + ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
+  }) + '"' : '"' + string + '"';
+  
+  
+}
+json_quote(JSON.stringify(App().getImageDocument().exportToJson(true)));
+
+
+-->
+

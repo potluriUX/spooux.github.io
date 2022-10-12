@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* Corrections to vortext.css for small screen, mobile devices */
+
+/* Who wants an orange whip? */
+
+body { font-size: 4vw; }
+
+/* Orange whip? Orange whip? */
+
+table.vibrant,
+.head1, .head2, .head3, .head4,
+.foot1, .foot2, .foot3, .foot4,
+.gallery2, .gallery3, .gallery4, .gallery5,
+p.inline, float-left, .float-right,
+table.rygb, table.rygbv, table.roygbv, table.roygbiv,
+blockquote,.quoteblock,
+table.shadow { font-size: 50%; }
+
+p { text-align: left; }
+
+h1 { font-size: 275%; }
+
+table.signature td:first-child { width: 3em; height: 4em; }
+.signature img                 { width: 2em; height: 2em; }
+
+.toc ol { margin-left: 1.000em; }
+
+table.maths    td.spacer,
+table.nonmaths td.spacer        { width: 2.000em; }
+
+/* Three orange whips. */
+
+.keynom, .keyother, .keyword { white-space: normal !important; }
+
+.embeddedvideo iframe.hd { width: 16.0em; height:  9.0em; } /* 16x9 */
+.embeddedvideo iframe.sd { width: 12.0em; height:  9.0em; } /*  4x3 */
+.embeddedvideo iframe.sp { width: 13.5em; height: 18.0em; } /*  3x4 */
+
+/* No Condition Is Permanent. */

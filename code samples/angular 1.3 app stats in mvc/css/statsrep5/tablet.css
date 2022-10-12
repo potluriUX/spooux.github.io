@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* Styles for Tablets and Larger */
+
+body {
+}
+
+.wrapper {
+	
+}
+
+.header {
+}
+
+.hdrLogo {
+	float: left;
+}
+
+.topNav1 .welcome {
+	font-size: 1.2em;
+}
+
+
+
+.mainContent {
+	padding: 25px 2.5% 15px;
+}
+
+.footer {
+	
+}
+
+.footer .links {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+
+.footer .logo {
+	margin: 10px 30% 5px;
+}
+
+.footer .legal {
+	font-size: 0.8em;
+	margin: 10px 30% 5px;
+}
+
+
+/* Type Styles */
+
+
+/* Navigation Link Styles */
+.topNav2 .navBtn .triangle {
+	bottom: -17px;
+	height: 17px;
+	width: 25px;
+}
+
+.topNav2 .navBtn a br {
+	display: none;
+}
+
+.topNav2 .navBtn {
+	padding: 10px 15px;
+	margin-right: 10px;
+	font-size: 0.8em;
+	height: auto;
+}
+
+
+/* Column Styles */
+.cols3 .col1, .cols3 .col2, .cols3 .col3 {
+	float: left;
+	width: 31%;
+}
+
+.cols3 .col1, .cols3 .col2 {
+	margin: 0 3.5% 0 0;
+}
+
+/* Login Page */
+
+#loginPg {
+	margin: 25px auto;
+	max-width: 500px;
+}
+
+#loginPg .mainContent {
+    padding: 15px 5% 25px;
+}
+
+
+/* Tabbed Panel Styles */
+
+.tabGrp {
+	
+}
+
+.tabGrp .tabs {
+	padding: 5px 5px 0;
+}
+
+.tabGrp .tabs .tab {
+	margin: 0 10px 0 0;
+	-webkit-border-radius: 6px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius: 6px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-radius: 6px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	
+}
+
+.tabGrp .tabs .tab.active {
+	
+}
+
+.tabGrp .panels {
+}
+
+.tabGrp .panels .panel {
+	
+}
+
+/* begin iPad (landscape only) specific styles */
+@media only screen and (orientation: landscape) {
+
+#rptData {
+	font-size: 0.9em;
+}
+
+#rptData .dataTbl {
+	margin: 0px 2% 0px 0px;
+	float: left;
+	width: 73%;
+}
+#rptData #prodStats {
+	margin: 0;
+	float: left;
+	width: 24%;
+}
+
+
+
+}

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<!--?!11!bluebg.jpg!rgb(87,149,208)!rgb(255,255,255)!Arial-->
+
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=550, initial-scale=1">
+<title>HACKER Thunderify.com</title>
+<link id="pagestyle" rel="stylesheet" type="text/css" href="geektype3_files/style.css">
+<!--<script src="geektype3_files/analytics.txt" async=""></script>-->
+<script type="text/javascript" src="geektype3_files/jquery.txt"></script>
+<link rel="stylesheet" type="text/css" href="geektype3_files/spectrum.css">
+<script type="text/javascript" src="geektype3_files/spectrum.js"></script>
+
+
+
+
+<script src="geektype3_files/jquery.js" type="text/javascript"></script> 
+<script src="geektype3_files/script.js" type="text/javascript"></script> 
+<script type="text/javascript">
+getKernel = localStorage.getItem('kernel') || '0';
+Typer.file = ('../ASSETS/kernels/'+ getKernel +'.txt');
+Typer.init();
+</script>
+	<input id="typer" style="position:relative; left:-100em;"/>
+<script type="text/javascript">
+$("#console").click(function () { $('#typer').focus(); })
+
+
+
+
+var dragContainer = $("body");
+var currentDragData = {
+    offset: {x:0, y:0},
+    target: null
+};
+
+$(document).ready(function(e) {
+    $(document).delegate(".dragme", "mousedown", function(e) {
+        if(!currentDragData.target) {
+            if($(e.currentTarget).hasClass("dragme") && !$(e.target).closest(".folder").length) {
+                currentDragData.target = $(e.currentTarget);
+                currentDragData.target.parent().append(currentDragData.target);
+                currentDragData.offset.x = e.pageX - currentDragData.target.offset().left;//e.offsetX;
+                currentDragData.offset.y = e.pageY - currentDragData.target.offset().top;//e.offsetY;
+            }
+        }
+    });
+	
+    $(document).delegate(".dragme #close", "mouseup", function(e) {
+		$(e.currentTarget).closest(".dragme").hide();
+
+    });
+	/*
+	$(document).delegate(".dragme .folder", "mouseup", function(e) {
+
+		currentDragData.target = null;
+
+	});*/
+	
+    $(document).delegate(".dragme", "mouseup", function(e) {
+        if(currentDragData.target) {
+            currentDragData.target = null;		
+        }	
+    });
+    
+    $(document).mousemove(function(e) {
+        if(currentDragData.target) {
+            e.preventDefault();
+            currentDragData.target.offset({
+                left: e.pageX - currentDragData.offset.x,
+                top: e.pageY - currentDragData.offset.y
+            });
+        }
+    });
+});
+
+function showDraggable(d) {
+	$(d).toggle();
+	$(d).parent().append($(d));
+}
+</script>
+
+<script type="text/javascript">
+function showDiv() {
+}
+function showAllDiv() {
+	document.getElementById('AccessGranted').style.display = "none";
+	document.getElementById('AccessDenied').style.display = "none";
+	document.getElementById('LevelRequired').style.display = "none";
+	document.getElementById('Downloading').style.display = "none";
+	document.getElementById('Initializing').style.display = "none";
+	document.getElementById('Scan').style.display = "none";
+	document.getElementById('Poke').style.display = "none";
+	document.getElementById('Map').style.display = "none";
+	document.getElementById('SystemFailure').style.display = "none";
+	document.getElementById('Help').style.display = "none";
+	document.getElementById('Breach').style.display = "none";
+	document.getElementById('Hash').style.display = "none";
+	document.getElementById('Evacuate').style.display = "none";
+	document.getElementById('Password').style.display = "none";
+	document.getElementById('section').style.display = "none";
+	document.getElementById('Query').style.display = "none";
+	document.getElementById('Console').style.display = "none";
+	document.getElementById('Deploy').style.display = "none";
+	document.getElementById('Irc').style.display = "none";
+	document.getElementById('Help').style.display = "none";
+	document.getElementById('Tracing').style.display = "none";
+	document.getElementById('Neurotoxin').style.display = "none";
+	document.getElementById('Rat').style.display = "none";	
+	document.getElementById('myaudio2').pause();
+	document.getElementById('myaudio').pause();
+}
+</script>
+<script type="text/javascript">
+$(document).keyup(function(event) { 
+    
+ if(event.which == 27) { 
+   showAllDiv();
+ }
+  if(event.which == 8) { 
+   showAllDiv();
+ }
+ else if(event.which == 37) { 
+   showAllDiv();
+   document.getElementById('Tracing').style.display = "block";
+ }
+ else if(event.which == 40) { 
+   showAllDiv();
+   document.getElementById('Rat').style.display = "block";
+ }
+ else if(event.which == 39) { 
+   showAllDiv();
+   document.getElementById('Irc').style.display = "block";
+   }
+ else if(event.which == 38) { 
+   showAllDiv();
+   document.getElementById('Neurotoxin').style.display = "block";
+  }
+ else if(event.which == 18) { 
+   showAllDiv();
+   document.getElementById('AccessGranted').style.display = "block";
+ }
+  else if(event.which == 190) { 
+   showAllDiv();
+   document.getElementById('AccessGranted').style.display = "block";
+ }
+ else if(event.which == 13) { 
+   showAllDiv();
+   document.getElementById('AccessDenied').style.display = "block";
+ }
+ else if(event.which == 16) { 
+   showAllDiv();
+   document.getElementById('AccessGranted').style.display = "block";
+ }
+  else if(event.which == 49) { 
+   showAllDiv();
+   document.getElementById('Downloading').style.display = "block";
+   
+ }
+  else if(event.which == 50) { 
+   showAllDiv();
+   document.getElementById('Initializing').style.display = "block";
+ }
+  else if(event.which == 51) { 
+   showAllDiv();
+   document.getElementById('Scan').style.display = "block";
+  }
+
+  else if(event.which == 52) { 
+   showAllDiv();
+   document.getElementById('Console').style.display = "block";
+ }
+  else if(event.which == 36) { 
+   showAllDiv();
+   document.getElementById('Map').style.display = "block";
+ }
+  else if(event.which == 53) { 
+   showAllDiv();
+   document.getElementById('Poke').style.display = "block";
+  }
+  else if(event.which == 54) { 
+   showAllDiv();
+   document.getElementById('Hash').style.display = "block";
+    }
+  else if(event.which == 55) { 
+   showAllDiv();
+   document.getElementById('Query').style.display = "block";
+     }
+  else if(event.which == 57) { 
+   showAllDiv();
+   document.getElementById('Deploy').style.display = "block";
+  }
+  else if(event.which == 56) { 
+   showAllDiv();
+   document.getElementById('Breach').style.display = "block";
+  }
+  else if(event.which == 48) { 
+   showAllDiv();
+   alert("gest");
+   document.getElementById('myaudio').play();
+   document.getElementById('Evacuate').style.display = "block";
+   }
+   else if(event.which == 35) { 
+   showAllDiv();
+   document.getElementById('Password').style.display = "block";
+     
+    setTimeout(function() {
+      showAllDiv();
+  document.getElementById("ConnectionLost").style.display = "block";
+  document.getElementById('myaudio2').pause();
+}, 22000);
+  
+  setTimeout(function() {
+      showAllDiv();
+  document.getElementById("Countdown").style.display = "block";
+  document.getElementById('myaudio2').play();
+}, 4000);
+
+
+   }
+  else if(event.which == 9) { 
+   showAllDiv();
+   document.getElementById('Help').style.display = "block";
+  // document.getElementById('section').style.display = "block";
+       }
+	   
+	   
+	   
+  else if(event.which == 113) { 
+   showAllDiv();
+   document.getElementById('Help').style.display = "block";
+   document.getElementById('section').style.display = "block";
+       }
+	   
+  else if(event.which == 101) { 
+   showAllDiv();
+   document.getElementById('SystemFailure').style.display = "block";
+    }
+  else if(event.which == 97) { 
+   showAllDiv();
+   document.getElementById('Numbers').style.display = "block";
+    }
+  else if(event.which == 98) { 
+   showAllDiv();
+   document.getElementById('Radar').style.display = "block";
+     }
+  else if(event.which == 99) { 
+   showAllDiv();
+   document.getElementById('Pony').style.display = "block";
+      }
+  else if(event.which == 100) { 
+  }
+});
+function showhelp(){
+    showAllDiv();
+   document.getElementById('Help').style.display = "block";
+   document.getElementById('section').style.display = "block";
+}
+
+</script>
+</head>
+
+
+<body style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; background-image: url(&quot;../ASSETS/textures/umbrella.jpg&quot;);" onload="startTime()">
+<!--
+<img id="show" src="../ASSETS/img/settings.png" style="position:fixed;top:12px;right:25px;" />  -->
+<!--<div id="dragme">
+    <ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:100px"
+     data-ad-client="ca-pub-3730266544385182"
+     data-ad-slot="1600607594"></ins>
+           <div style="background-image: url(&quot;../ASSETS/logos/3.png&quot;);" id="center">
+     
+</div>-->
+<div id="dragme">
+   
+
+</div>
+    <div style="display: none;background-color:yellow" id="section" >
+ 
+<!--<input value="&lt;- Back" onclick="history.go(-1);" style="width:auto;padding:2px;" type="SUBMIT">-->
+
+
+<!--<select>
+    <option selected="selected">Select Font</option>
+    <option>Arial</option>
+	<option>Arial Black</option>
+    <option>Tahoma</option>
+    <option>Consolas</option>
+    <option>Verdana</option>
+	<option>Wingdings</option>
+	<option>Hacker1</option>
+	<option>Helvetica</option>
+		<option>Matrix</option>
+		<option>Fixedsys</option>
+<option>Impact</option>
+</select>-->
+
+<!--Background: <input style="background: none repeat scroll 0% 0% rgb(255, 255, 0); display: none;" class="basic">
+<div style="" class="sp-replacer sp-light">
+    <div class="sp-preview">
+        <div style="background-color: transparent;" class="sp-preview-inner sp-clear-display"></div>
+            
+    </div><div class="sp-dd">▼</div></div>-->
+<!--Text: <input style="display: none;" class="basic2" type="text"><div style="" class="sp-replacer sp-light">
+    <div class="sp-preview">
+        <div style="background-color: transparent;" class="sp-preview-inner sp-clear-display"></div>
+            
+    </div><div class="sp-dd">▼</div></div>-->
+
+<select name="fruit" id="logotype">
+	<option value="1">Select Logo</option>
+	<option value="1">No Logo</option>
+	<option selected="selected" value="15">K Corp</option>
+	<option value="16">Skeleton Corp</option>
+	<option value="17">BioHazard</option>
+	<option value="18">Shield</option>
+	<option value="19">CSX</option>
+	<option value="7">OmniCorp</option>
+	<option value="8">RDA</option>
+<!--	<option value="9">Wyland-Yutami</option>-->
+        
+	<option value="0">SCP</option>
+  <option value="10">Tegnio</option>
+    <option value="20">Intelligence</option>
+	    <option value="21">Radiation</option>
+		<option value="14">Vendetta</option>
+</select>
+<select name="texture" id="texture">
+    <option selected="selected" value="0.png">Select Background</option>
+	<option value="0.png">No Background</option>
+   
+    
+	<option value="redbg.jpg">Red</option>
+        <option value="bluebg.jpg">Blue</option>
+	<option value="umbrella.jpg">Umbrella</option>
+	<option value="umbrella2.jpg">Umbrella2</option>
+        
+        <option value="hacker.jpg">Hacker</option>
+        <option value="bee.jpg">Bee</option>
+        <option value="pink.jpg">Pink</option>
+        
+         <option value="cosmic.jpg">Cosmic</option>
+        <option value="beecolor.jpg">Metal</option>
+        <option value="rainbow.jpg">Rainbow</option>
+        <option value="orangeglow.jpg">Orange</option>
+        
+         <option value="1.png">World Glow</option>
+    <option value="2.png">World Map</option>
+    <option value="3.png">Analog Lines</option>
+        
+	
+</select>
+<select name="kernel" id="kernel">
+    <option selected="selected" value="4">Python</option>
+    <option  value="0">Javascript</option>
+    <option value="1">Java</option>
+    <option  value="2">C</option>
+	<option value="3">C++</option>
+	
+	
+</select>
+<!--<select name="kernel" id="kernel">
+    <option value="0">Linux</option>
+    <option value="1">ASP.NET MVC</option>
+    <option selected="selected" value="2">C++</option>
+	<option value="3">Python</option>
+	<option value="4">Fortran</option>
+	<option value="4">Nmap</option>
+</select>-->
+
+<!--<button onclick='showhelp()'>Options</span>-->
+
+<script>
+function myFunction() {
+
+    localStorage.setItem('folders', "none");
+		$("#folders").css("display", "none");
+}
+
+
+function myFunction2() {
+
+	    localStorage.setItem('folders', "block");
+		$("#folders").css("display", "block");
+}
+</script>
+<!--Folders:
+<input value="OFF" onclick="myFunction()" style="width:auto;padding:2px;" type="SUBMIT">
+<input value="ON" onclick="myFunction2()" style="width:auto;padding:2px;" type="SUBMIT">-->
+
+<script>
+$.fn.selectText = function () {
+    return $(this).each(function (index, el) {
+        if (document.selection) {
+            var range = document.body.createTextRange();
+            range.moveToElementText(el);
+            range.select();
+        } else if (window.getSelection) {
+            var range = document.createRange();
+            range.selectNode(el);
+            window.getSelection().addRange(range);
+        }
+    });
+}
+</script>
+<div id="section2" onclick="$(this).selectText()"><div class="SD">THUNDERIFY.COM</div><div id="w1" class="SD">3</div><div class="SD">!</div><div id="w2" class="SD">umbrella.jpg</div><div class="SD">!</div><div id="w3" class="SD">rgb(0,0,0)</div><div class="SD">!</div><div id="w4" class="SD">rgb(255,0,0)</div>
+</div>
+
+
+<img src="geektype3_files/close.png" id="hide" style="width:40px;height:40px;float:right;margin-right:35px;margin-top:3px;">
+</div>
+<div id="console">
+<button id='automate' onclick="var x = setInterval(function(){
+        Typer.addTextAuto(12);
+}, 30);" title="Write code for me" id="button">Automate</button>
+
+<div id="txt">15:56:45</div>
+<br> PRESS TAB for help</div>
+</div>
+
+
+<div id="AccessGranted" style="display:none;">
+
+   
+    <h1> GRANTED</h1><img src="geektype3_files/password2.gif"></div>
+
+<div id="AccessDenied" ondragstart="return false;" style="display: block;"><h1>WRONG PASSWORD</h1></div>
+<div id="LevelRequired" ondragstart="return false;" style="display:none;"><h1> BREACH</h1><h2>LEVEL 3 ACCESS REQUIRED</h2></div>
+<div id="Downloading" ondragstart="return false;" class="dragme" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png"><h1>DATA Download...</h1>SECURE Data<br>
+    <img src="geektype3_files/downloading.gif"></div>
+<div id="Rat" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png"><img src="geektype3_files/rat.gif"></div>
+<div id="Initializing" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png"><h1>Encrypt..</h1><img src="geektype3_files/encrypting.gif"></div>
+<div id="Scan" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png">
+    <h1>Satellite Uplink</h1>Interfacing..<img src="geektype3_files/ratattack.gif"></div>
+<div id="Map" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);"><img id="close" src="geektype3_files/close1.png">
+    <h1>Tracing..</h1><img src="geektype3_files/facilities.gif"></div>
+<div id="Countdown" ondragstart="return false;" style="display:none;"><h1>Purge Facility</h1>Purging will commence in:<br><br><br>
+    <img src="geektype3_files/countdown.gif"><br><br></div>
+<div id="Password" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <h1>Purge Facility?</h1>Confirm password<br><img src="geektype3_files/password2.gif"></div>
+<div id="Poke" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png"><h1>PROJECT STOP</h1>Nuclear  Program<img src="geektype3_files/datcoldwar.gif"></div>
+<div id="Hash" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png"><h1>HACKER PASSWD Decryptor</h1>Calculating..<br><img src="geektype3_files/hash.gif"></div>
+<div id="Pony" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img src="geektype3_files/rainbow.gif"></div>
+<div id="SystemFailure" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);"></div>
+<div id="ConnectionLost" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">Connection gone..<h2>Facility Offline</h2></div>
+<div id="Help" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+
+<img id="close" style="float:left" src="geektype3_files/close1.png">
+<!--<img src="geektype3_files/hints.png">-->
+<br>
+Press 1 for  Download<br>
+Press 2 for Encrypt<br>
+Press 3 for Uplink<br>
+Press 4 for Compile<br>
+Press 5 for Nuke<br>
+Press 6 for Decrypt<br>
+Press 7 for Interpol<br>
+Press 8 for Hawk<br>
+
+Press 9 for Breach<br>
+Press 10 for Breach2<br>
+
+TAB for Help<br>
+Shift for Access Granted<br>
+
+
+<hr>
+<div id="LetterCount"></div><br>
+<!--<p>Stats &amp; Progress</p>
+<div id="LetterCount"></div><br>
+<div id="getAchievement1" class="ac"></div>
+<div id="getAchievement2" class="ac"></div>
+<div id="getAchievement3" class="ac"></div>
+<div id="getAchievement4" class="ac"></div>
+<div id="getAchievement5" class="ac"></div>
+<div id="getAchievement6" class="ac"></div>
+<div id="getAchievement7" class="ac"></div>
+<div id="getAchievement8" class="ac"></div>
+<div id="getAchievement9" class="ac"></div>-->
+
+
+
+<!--<div id="itemz" style="position:fixed; bottom:20px; right:20px; overflow:hidden;  background-color:#ccc; height:90px; z-index:17">
+	
+	<script type="text/javascript">
+	google_ad_client = "ca-pub-3193838836354850";
+	/* omnimoads */
+	google_ad_slot = "2980063218";
+	google_ad_width = 728;
+	google_ad_height = 90;
+	//
+	</script>
+
+	<script type="text/javascript" src="geektype3_files/show_ads.txt">
+	</script>
+
+</div>-->
+
+</div>
+
+
+
+<div id="Breach" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png">
+    <h1> ALERT</h1><img src="geektype3_files/200_s.gif"></div>
+<div id="Download2" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png">
+    <h1> Download</h1><img src="geektype3_files/200.gif"></div>
+<div id="Evacuate" ondragstart="return false;" style="display:none;"> 
+   
+    <h1> BREACHED</h1><img src="geektype3_files/200.gif"></div>
+<div id="Query" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png">Interpol database
+    <img src="geektype3_files/query.gif"></div>
+<div id="Console" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png">Compiling Nodes<br><br>
+    <img src="geektype3_files/console2.gif"></div>
+<div id="Deploy" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+    <img id="close" src="geektype3_files/close1.png"><h1>Activating </h1>Engage all enemy vehicles
+    <img src="geektype3_files/facilities2.gif"></div>
+<div id="Numbers" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);"><img src="geektype3_files/id2kyxB.gif"></div>
+<div id="Radar" ondragstart="return false;" onclick='$("#Radar").toggle();' style="display:none;"><img id="close" src="geektype3_files/close1.png"><img src="geektype3_files/radar.gif"></div>
+<div id="Irc" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);"><img id="close" src="geektype3_files/close1.png"><img src="geektype3_files/irc.gif"></div>
+<div id="Tracing" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);"><img id="close" src="geektype3_files/close1.png"><img src="geektype3_files/tracing.gif"></div>
+
+
+
+
+<div id="BigFolder" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);">
+<img id="close" style='float:left' src="geektype3_files/close1.png">
+
+<h2> All Actions</h2>
+
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Downloading");'><p>Download</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Hash");'><p>Hash Pwd</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Console");'><p>Kernel</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Initializing");'><p>Decryptor</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Map");'><p>Nuke</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Scan");'><p>Rat Attack</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Query");'><p>Interpol</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Deploy");'><p>Deploy</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Irc");'><p>Talk</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Tracing");'><p>Trace</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Neurotoxin");'><p>Flood Facility</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Rat");'><p>Virus</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#AccessDenied");'><p>Denied</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Download2");'><p>Hacked</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Breach");'><p>Blast</p></div>
+
+</div>
+
+
+
+
+
+<div id="Neurotoxin" class="dragme" ondragstart="return false;" style="display: none; border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);"><img id="close" src="geektype3_files/close1.png"><h1>Flooding Facility</h1>Preparing Neurotoxin Emiters<br><br><img src="geektype3_files/neurotoxin.gif"></div>
+
+<audio loop="" id="myaudio">
+<source src="geektype3_files/caution.wav" type="audio/wav">
+</audio>
+<audio loop="" id="myaudio2">
+<source src="geektype3_files/purge.wav" type="audio/wav">
+</audio>
+<!--
+	<div class="box" id="box">
+	<img id="icon" src="" />
+	<h1>Achievement Unlocked</h1>
+	<p id="achievementname"></p>
+	</div>
+-->
+<div id="console">userna|</div>
+
+
+<div style="font-family: Arial; display: block;" id="folders">
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Downloading");'><p>Download</p></div>
+<!--<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Console");'><p>Terminal</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='showDraggable("#Hash");'><p>Decryptor</p></div>-->
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='$("#section").toggle();'><p>Settings</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='$("#BigFolder").toggle();'><p>ALL ACTIONS</p></div>
+<div style="background-color: rgb(255, 0, 0);" class="folder" onclick='$("#Help").toggle();'><p>Options/Help</p></div>
+<div id="result2"></div>
+</div>
+<script type="text/javascript">
+//$("body").on("pageshow", function( event ) {
+//        $("body").find('input:first').focus();
+//} );
+if (typeof(Storage) != "undefined") {
+	 getColour = localStorage.getItem("color1");
+        // console.log(location.search);//location.search is options
+	 var c1 = location.search.split('!')[3] ? location.search.split('!')[3] : getColour;
+localStorage.setItem('color1', c1);
+document.getElementById("w3").innerHTML = c1;
+
+
+	 $("body").css({"background-color":c1});
+	 $("button").css({"color":c1});
+	
+	getColour2 = localStorage.getItem("color2");
+	 	 var c2 = location.search.split('!')[4] ? location.search.split('!')[4] : getColour2;
+		 document.getElementById("w4").innerHTML = c2;
+
+localStorage.setItem('color2', c2);
+	 $("body").css({"color":c2});
+	 $("button").css({"background-color":c2});
+	 $(".folder").css({"background-color":c2});
+	 $(".dragme").css({"border-color":c2});
+	 $(".dragme").css({"color":c2});
+
+	 
+	 
+	 
+	 
+	 
+	 
+getFont = localStorage.getItem("mainfont") || 'Arial';
+var f1 = location.search.split('!')[5] ? location.search.split('!')[5] : getFont;
+localStorage.setItem('mainfont', f1);
+	 	 	$("body").css({"font-family":f1});
+			$("#folders").css({"font-family":f1});
+
+
+getAchievement1 = localStorage.getItem("lazy") || '0';
+	if (getAchievement1 == 1) {
+	document.getElementById("getAchievement1").innerHTML = "<img title='Lazy College Senior&#13;Type 300 Characters' src=\"../ASSETS/achievements/progress/lazy/" + getAchievement1 + ".png\">";};
+getAchievement2 = localStorage.getItem("shakespeare") || '0';
+	if (getAchievement2 == 1) {
+	document.getElementById("getAchievement2").innerHTML = "<img title='Shakespeare?&#13;Type 3000 Characters' src=\"../ASSETS/achievements/progress/shakespeare/" + getAchievement2 + ".png\">";};
+getAchievement3 = localStorage.getItem("dostoyevsky") || '0';
+	if (getAchievement3 == 1) {
+	document.getElementById("getAchievement3").innerHTML = "<img title='Dostoyevsky, surely&#13;Type 8000 Characters' src=\"../ASSETS/achievements/progress/dostoyevsky/" + getAchievement3 + ".png\">";};
+getAchievement4 = localStorage.getItem("aynrand") || '0';
+	if (getAchievement4 == 1) {
+	document.getElementById("getAchievement4").innerHTML = "<img title='Are you Ayn Rand?&#13;Type 14000 Characters' src=\"../ASSETS/achievements/progress/aynrand/" + getAchievement4 + ".png\">";};
+getAchievement5 = localStorage.getItem("monkeys") || '0';
+	if (getAchievement5 == 1) {
+	document.getElementById("getAchievement5").innerHTML = "<img title='1000 Monkeys, 1000 Typewriters&#13;Type 20000 Characters' src=\"../ASSETS/achievements/progress/monkeys/" + getAchievement5 + ".png\">";};
+getAchievement6 = localStorage.getItem("watson") || '0';
+	if (getAchievement6 == 1) {
+	document.getElementById("getAchievement6").innerHTML = "<img title='You are IBM Watson&#13;Type 50000 Characters' src=\"../ASSETS/achievements/progress/watson/" + getAchievement6 + ".png\">";};
+getAchievement7 = localStorage.getItem("celestia") || '0';
+	if (getAchievement7 == 1) {
+	document.getElementById("getAchievement7").innerHTML = "<img title='You are Princess Celestia&#13;Type 100.000 Characters' src=\"../ASSETS/achievements/progress/celestia/" + getAchievement7 + ".png\">";};
+getAchievement8 = localStorage.getItem("impossibru") || '0';
+	if (getAchievement8 == 1) {
+	document.getElementById("getAchievement8").innerHTML = "<img title='IMPOSSIBRU&#13;CANNOT BE REAL (1 Million Characters)' src=\"../ASSETS/achievements/progress/impossibru/" + getAchievement8 + ".png\">";};
+getAchievement9 = localStorage.getItem("hax") || '0';
+	if (getAchievement9 == 1) {
+	document.getElementById("getAchievement9").innerHTML = "<img title='HAAAAAAAX&#13;HAAAAAAAAAAAX (10 Million Characters)' src=\"../ASSETS/achievements/progress/hax/" + getAchievement9 + ".gif\">";};
+	
+
+getFolders = localStorage.getItem("folders") || 'block';
+$("#folders").css("display", getFolders);
+				  
+getTexture = localStorage.getItem("texture") || '1.png';
+var t = location.search.split('!')[2] ? location.search.split('!')[2] : getTexture;
+localStorage.setItem('texture', t);
+	 	 	$("body").css("background-image",'url("../ASSETS/textures/'+ t +'")');
+			document.getElementById("w2").innerHTML = t;
+			
+getLogo = localStorage.getItem("logotype") || '10';
+var l = location.search.split('!')[1] ? location.search.split('!')[1] : getLogo;
+localStorage.setItem('logotype', l);
+document.getElementById("w1").innerHTML = l;
+
+			
+
+	  	$("#center").css("background-image",'url("../ASSETS/logos/'+ l +'.png")');
+	 
+} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('select').change(function() {
+        if($(this).val() == "Default font"){
+            $('body').css('font-family',"");
+			$('#folders').css('font-family',$(this).val());
+        }else{
+            $('body').css('font-family',$(this).val());
+			$('#folders').css('font-family',$(this).val());
+			localStorage.setItem("fonttype", $(this).val());
+        }
+
+    }); 
+  
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#section").hide();
+	$("#Help").hide();
+  });
+  $("#show").click(function(){
+    $("#section").show();
+	$("#Help").show();
+  });
+});
+</script>
+<script type="text/javascript">//<![CDATA[ 
+
+document.getElementById("logotype").onchange = function() {
+    localStorage.setItem('logotype', document.getElementById("logotype").value);
+	 getLogo = localStorage.getItem("logotype");
+
+		  	$("#center").css("background-image",'url("../ASSETS/logos/'+ getLogo +'.png")');
+			document.getElementById('section2').style.display = "none";
+			document.getElementById("w1").innerHTML = getLogo;
+}
+
+if (localStorage.getItem('logotype')) {
+    document.getElementById("logotype").options[localStorage.getItem('logotype')].selected = true;
+
+}
+//]]>  
+
+</script>
+<script type="text/javascript">//<![CDATA[ 
+
+document.getElementById("texture").onchange = function() {
+    localStorage.setItem('texture', document.getElementById("texture").value);
+	getTexture = localStorage.getItem("texture");
+	 	$("body").css("background-image",'url("../ASSETS/textures/'+ getTexture +'")');
+		document.getElementById('section2').style.display = "none";
+	document.getElementById("w2").innerHTML = getTexture;
+}
+
+if (localStorage.getItem('texture')) {
+    document.getElementById("texture").options[localStorage.getItem('texture')].selected = true;
+
+
+}
+//]]>  
+
+</script>
+
+
+<script type="text/javascript">//<![CDATA[ 
+
+document.getElementById("kernel").onchange = function() {
+    localStorage.setItem('kernel', document.getElementById("kernel").value);
+	location.reload();
+
+}
+
+if (localStorage.getItem('kernel')) {
+    document.getElementById("kernel").options[localStorage.getItem('kernel')].selected = true;
+
+
+}
+//]]>  
+</script>
+<script type="text/javascript">//<![CDATA[ 
+
+$(".basic").spectrum({
+	 allowEmpty: true,
+	localStorageKey: "color1",
+    change: function(color) {
+	localStorage.setItem("color1", color.toHexString());
+        $("body").css({"background-color":color.toHexString()});
+		$("#button").css({"color":color.toHexString()});
+		document.getElementById('section2').style.display = "none";
+		document.getElementById("w3").innerHTML = color.toRgbString().replace(" ", "").replace(" ", "");
+		
+    }
+});
+</script><div style="position: absolute; top: 10px; left: 0px;" class="sp-container sp-hidden sp-light sp-input-disabled sp-clear-enabled sp-palette-buttons-disabled sp-palette-disabled sp-initial-disabled"><div class="sp-palette-container"><div class="sp-palette sp-thumb sp-cf"></div><div class="sp-palette-button-container sp-cf"><button type="button" class="sp-palette-toggle">less</button></div></div><div class="sp-picker-container"><div class="sp-top sp-cf"><div class="sp-fill"></div><div class="sp-top-inner"><div style="background-color: rgb(255, 0, 0);" class="sp-color"><div class="sp-sat"><div class="sp-val"><div style="display: none;" class="sp-dragger"></div></div></div></div><div title="Clear Color Selection" class="sp-clear sp-clear-display"></div><div style="" class="sp-hue"><div style="display: none;" class="sp-slider"></div></div></div><div style="" class="sp-alpha"><div class="sp-alpha-inner"><div style="display: none;" class="sp-alpha-handle"></div></div></div></div><div class="sp-input-container sp-cf"><input class="sp-input" spellcheck="false" type="text"></div><div class="sp-initial sp-thumb sp-cf"></div><div class="sp-button-container sp-cf"><a class="sp-cancel" href="#">cancel</a><button type="button" class="sp-choose">choose</button></div></div></div>
+
+
+<script type="text/javascript">//<![CDATA[ 
+
+$(".basic2").spectrum({
+	localStorageKey: "color2",
+	 allowEmpty: true,
+    change: function(color) {
+		localStorage.setItem("color2", color.toHexString());
+        $("body").css({"color":color.toHexString()});
+		$(".folder").css({"background-color":color.toHexString()});
+		$(".dragme").css({"border-color":color.toHexString()});
+		$(".dragme").css({"color":color.toHexString()});		
+		localStorage.setItem("colorbutton", color.toHexString());
+		$("#button").css({"background-color":color.toHexString()});
+		document.getElementById('section2').style.display = "none";
+		document.getElementById("w4").innerHTML = color.toRgbString().replace(" ", "").replace(" ", "");
+    }
+});
+</script><div style="position: absolute; top: 10px; left: 0px;" class="sp-container sp-hidden sp-light sp-input-disabled sp-clear-enabled sp-palette-buttons-disabled sp-palette-disabled sp-initial-disabled"><div class="sp-palette-container"><div class="sp-palette sp-thumb sp-cf"></div><div class="sp-palette-button-container sp-cf"><button type="button" class="sp-palette-toggle">less</button></div></div><div class="sp-picker-container"><div class="sp-top sp-cf"><div class="sp-fill"></div><div class="sp-top-inner"><div style="background-color: rgb(255, 0, 0);" class="sp-color"><div class="sp-sat"><div class="sp-val"><div style="display: none;" class="sp-dragger"></div></div></div></div><div title="Clear Color Selection" class="sp-clear sp-clear-display"></div><div style="" class="sp-hue"><div style="display: none;" class="sp-slider"></div></div></div><div style="" class="sp-alpha"><div class="sp-alpha-inner"><div style="display: none;" class="sp-alpha-handle"></div></div></div></div><div class="sp-input-container sp-cf"><input class="sp-input" spellcheck="false" type="text"></div><div class="sp-initial sp-thumb sp-cf"></div><div class="sp-button-container sp-cf"><a class="sp-cancel" href="#">cancel</a><button type="button" class="sp-choose">choose</button></div></div></div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- hacker -->
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</body></html>
+
+<style>
+	
+	
+	img{
+		width:350px;
+		height:200px;
+	}
+	#close{
+	height:40px;
+	width:40px;
+	}
+</style>

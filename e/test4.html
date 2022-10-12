@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo</title>
+  
+  <script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'></script>
+  
+  
+  
+  
+ 
+  
+  <style type='text/css'>
+    
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+     var configsource=["Invitation/9.jpg", "BandW/16.jpg", "BandW/15.jpg", "BandW/2.jpg"
+     , "BandW/3.jpg"
+ , "BandW/5.jpg"
+ , "BandW/7.jpg"
+ , "Logo/1.jpg", "Logo/2.jpg", "Logo/3.jpg", "Logo/4.jpg"
+ , "BandW/5.jpg",
+ , "Christmas/1.jpg"
+ , "Christmas/4.jpg"
+ , "Christmas/3.jpg", 
+ , "Abstract/1.jpg"
+ , "Abstract/5.jpg"
+ 
+ , "Plain/1.jpg", "Plain/3.jpg", "Plain/4.jpg", "Plain/5.jpg", "Plain/7.jpg", 
+ 
+ ];
+ configsource = ['party_17.png', 'party_16.png', 'party_15.png', 
+     'party_14.png', 'party_10.png']
+     var configsource2=configsource;//if plain then configsource == configsource2 
+     ////and it is Name/image.png or image/jpg
+   // var configres="sales_10.png";
+    
+var thumbs = 
+   {"id":"999102","created":"1414761239","updated":"1436180005","status":"open","type":"default","userId":"2991","publisherId":"0","sourceImageId":"445200","numberOfRemixes":"186","publicKey":"1bb6e464","s3Filename":"1414761239-1bb6e464-86be.jpg","sourceUrl":"","documentJson":"{\"layers\":[{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#f6eaf7\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Baumans\",\"fontSize\":\"47px\",\"fontStyle\":\"normal\",\"text\":\"Event Name\",\"x\":\"24.85%\",\"y\":\"15.35%\",\"maxWidth\":470,\"strokeStyle\":\"#120f0f\",\"strokeWidth\":6,\"rounded\":true},\"type\":\"text\"},{\"isBackground\":true,\"type\":\"image\",\"filters\":[],\"sourceSrc\":\"http://res.cloudinary.com/do7w0q9iq/image/upload/thunderify/Plain/7.jpg\",\"resizedSrc\":\"http://res.cloudinary.com/do7w0q9iq/image/upload/c_lfill,h_385,w_495/thunderify/Plain/7.jpg\",\"styles\":{\"height\":385,\"width\":495,\"x\":0,\"y\":0}},{\"filters\":{\"properties\":{\"strength\":0},\"type\":\"opacity\"},\"isWatermark\":true,\"resizedSrc\":\"http://res.cloudinary.com/do7w0q9iq/image/upload/c_scale,e_make_transparent/v1436382379/thundlogo.png\",\"size\":\"medium\",\"sourceSrc\":\"https://d1k42gft2r86pe.cloudfront.net/api/file/ktDscnsyQXqYsrJn7Fo2\",\"styles\":{\"height\":27,\"width\":200,\"visible\":true,\"x\":\"0%\",\"y\":\"92%\"},\"type\":\"image\"},{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#ffffff\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Comfortaa\",\"fontSize\":\"29px\",\"fontStyle\":\"normal\",\"text\":\"We are having  party at xxx \\non 23 dec\",\"x\":\"12.32%\",\"y\":\"38.38%\",\"maxWidth\":470,\"strokeStyle\":\"#65a386\",\"strokeWidth\":4,\"rounded\":true},\"type\":\"text\"},{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#ffffff\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Courgette\",\"fontSize\":\"20px\",\"fontStyle\":\"normal\",\"text\":\"Company name. RSVP a@a.com\",\"x\":\"2.02%\",\"y\":\"83.82%\",\"maxWidth\":470,\"strokeStyle\":\"#65a386\",\"strokeWidth\":4,\"rounded\":true},\"type\":\"text\"},{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#ffffff\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Courgette\",\"fontSize\":\"23px\",\"fontStyle\":\"normal\",\"text\":\"_______________\",\"x\":\"31.52%\",\"y\":\"24.84%\",\"maxWidth\":470,\"strokeStyle\":\"#161a18\",\"strokeWidth\":4,\"rounded\":true},\"type\":\"text\"},{\"styles\":{\"align\":\"left\",\"fillStyle\":\"#ffffff\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Courgette\",\"fontSize\":\"47px\",\"fontStyle\":\"normal\",\"text\":\"____\",\"x\":\"77.78%\",\"y\":\"10.03%\",\"maxWidth\":470,\"strokeStyle\":\"#65a386\",\"strokeWidth\":6,\"rounded\":true},\"type\":\"text\"},{\"styles\":{\"align\":\"right\",\"fillStyle\":\"#ffffff\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Courgette\",\"fontSize\":\"47px\",\"fontStyle\":\"normal\",\"text\":\"____\",\"x\":\"3.84%\",\"y\":\"9.49%\",\"maxWidth\":470,\"strokeStyle\":\"#65a386\",\"strokeWidth\":6,\"rounded\":true},\"type\":\"text\"}]}"
+,"text":"Event Title \nDate\n than lucky","hasBeenFlagged":"0","hasBeenDeleted":"0","hasHighDef":"1","createdIPAddress":"99.238.86.213","totalViews":"0","redirectUrl":"","stat-embedType":"modal","stat-flow":"chromeExtension","secondsToCreate":"30","isUserTemplate":"0","isGlobalTemplate":"1","globalTemplateOrder":"100","cloudfrontUrl":"http://res.cloudinary.com/do7w0q9iq/image/upload/v1436539010/thunderify/Sales/10.png","displayUrl":"http://res.cloudinary.com/do7w0q9iq/image/upload/v1436625522/sales_10.png","path":"/i/1bb6e464","url":"https://shareasimage.com/i/1bb6e464"}
+
+
+  thumbs =  {
+    "id": "999102",
+    "created": "1414761239",
+    "updated": "1436180005",
+    "status": "open",
+    "type": "default",
+    "userId": "2991",
+    "publisherId": "0",
+    "sourceImageId": "445200",
+    "numberOfRemixes": "186",
+    "publicKey": "1bb6e464",
+    "s3Filename": "1414761239-1bb6e464-86be.jpg",
+    "sourceUrl": "",
+    "documentJson": "{\"layers\":[{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#140606\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Cabin Sketch\",\"fontSize\":\"38px\",\"fontStyle\":\"normal\",\"text\":\"--Lucene Publishing--\",\"x\":\"22.02%\",\"y\":\"14.05%\",\"maxWidth\":470,\"strokeStyle\":\"#e3faef\",\"strokeWidth\":5,\"rounded\":true},\"type\":\"text\"},{\"isBackground\":true,\"type\":\"image\",\"filters\":[],\"sourceSrc\":\"http://res.cloudinary.com/do7w0q9iq/image/upload/party_10.png\",\"resizedSrc\":\"http://res.cloudinary.com/do7w0q9iq/image/upload/c_lfill,h_385,w_495/v1436625522/party_10.png\",\"styles\":{\"height\":385,\"width\":495,\"x\":0,\"y\":0}},{\"filters\":{\"properties\":{\"strength\":0},\"type\":\"opacity\"},\"isWatermark\":true,\"resizedSrc\":\"http://res.cloudinary.com/do7w0q9iq/image/upload/c_scale,e_make_transparent/v1436382379/thundlogo.png\",\"size\":\"medium\",\"sourceSrc\":\"https://d1k42gft2r86pe.cloudfront.net/api/file/ktDscnsyQXqYsrJn7Fo2\",\"styles\":{\"height\":27,\"width\":200,\"visible\":true,\"x\":\"0%\",\"y\":\"92%\"},\"type\":\"image\"},{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#eb0505\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Cabin Sketch\",\"fontSize\":\"34px\",\"fontStyle\":\"normal\",\"text\":\"Annual Company Picnic\",\"x\":\"22.22%\",\"y\":\"41.49%\",\"maxWidth\":470,\"strokeStyle\":\"#65a386\",\"strokeWidth\":0,\"rounded\":true},\"type\":\"text\"},{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#ffffff\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Cabin Sketch\",\"fontSize\":\"25px\",\"fontStyle\":\"normal\",\"text\":\"Aug 13 11am to 5pm\\n\",\"x\":\"46.26%\",\"y\":\"68.75%\",\"maxWidth\":470,\"strokeStyle\":\"#65a386\",\"strokeWidth\":4,\"rounded\":true},\"type\":\"text\"},{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#ffffff\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Cabin Sketch\",\"fontSize\":\"23px\",\"fontStyle\":\"normal\",\"text\":\"oak wood park, \\ncalifornia\",\"x\":\"53.74%\",\"y\":\"80.43%\",\"maxWidth\":470,\"strokeStyle\":\"#65a386\",\"strokeWidth\":4,\"rounded\":true},\"type\":\"text\"},{\"styles\":{\"align\":\"center\",\"fillStyle\":\"#ffffff\",\"shadowColor\":\"rgba(0,0,0,0)\",\"fontFamily\":\"Cabin Sketch\",\"fontSize\":\"22px\",\"fontStyle\":\"normal\",\"text\":\"rsvp maria p\",\"x\":\"15.76%\",\"y\":\"80.94%\",\"maxWidth\":470,\"strokeStyle\":\"#65a386\",\"strokeWidth\":4,\"rounded\":true},\"type\":\"text\"}]}",
+    "text": "Event Title \nDate\n than lucky",
+    "hasBeenFlagged": "0",
+    "hasBeenDeleted": "0",
+    "hasHighDef": "1",
+    "createdIPAddress": "99.238.86.213",
+    "totalViews": "0",
+    "redirectUrl": "",
+    "stat-embedType": "modal",
+    "stat-flow": "chromeExtension",
+    "secondsToCreate": "30",
+    "isUserTemplate": "0",
+    "isGlobalTemplate": "1",
+    "globalTemplateOrder": "100",
+    "cloudfrontUrl": "http://res.cloudinary.com/do7w0q9iq/image/upload/v1437069051/invitation_13.jpg",
+    "displayUrl": "http://res.cloudinary.com/do7w0q9iq/image/upload/v1437069051/invitation_13.jpg",
+    "path": "/i/1bb6e464",
+    "url": "https://shareasimage.com/i/1bb6e464"
+}
+
+
+              
+
+;
+
+
+var str;
+for(i=0;i<
+    configsource.length;i++)
+   
+   {
+       var documentJson=$.parseJSON(thumbs.documentJson);
+      var resizedSrc =  $.parseJSON(thumbs.documentJson)['layers']['1']['resizedSrc'];
+      var sourceSrc =  $.parseJSON(thumbs.documentJson)['layers']['1']['sourceSrc'];
+           documentJson['layers']['1']['resizedSrc'] = "http://res.cloudinary.com/do7w0q9iq/image/upload/c_lfill,h_385,w_495/"+configsource[i];
+            documentJson['layers']['1']['sourceSrc'] = "http://res.cloudinary.com/do7w0q9iq/image/upload/" +configsource[i];
+            thumbs.documentJson = JSON.stringify(documentJson);
+            thumbs.cloudfrontUrl = "http://res.cloudinary.com/do7w0q9iq/image/upload/" + configsource2[i]
+           thumbs.displayUrl = "http://res.cloudinary.com/do7w0q9iq/image/upload/" + configsource2[i]
+           thumbs.id = 
+            console.log(JSON.stringify(thumbs))
+    //str = str + "<img src='"+ thumbs[i].cloudfrontUrl+"'></img>";
+       
+       }
+  //  console.log(JSON.stringify(thumbs[0]));
+    $( document ).ready(function() {
+    
+//console.log(str);
+    //$("#images").html(str);
+});
+
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <div id="images"></div>
+  
+</body>
+
+
+</html>
+
+<!--
+
+
+
+
+
+
+
+var cx = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
+   var escapable = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
+var    meta = { 
+        '\b': '\\b',
+        '\t': '\\t',
+        '\n': '\\n',
+        '\f': '\\f',
+        '\r': '\\r',
+        '"' : '\\"',
+        '\\': '\\\\'
+    };
+
+function json_quote(string) {
+  escapable.lastIndex = 0;
+  return escapable.test(string) ? '"' + string.replace(escapable, function (a) {
+      var c = meta[a];
+      return typeof c === 'string' ? c :
+          '\\u' + ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
+  }) + '"' : '"' + string + '"';
+  
+  
+}
+json_quote(JSON.stringify(App().getImageDocument().exportToJson(true)));
+
+
+-->
+

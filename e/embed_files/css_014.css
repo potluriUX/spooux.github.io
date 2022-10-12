@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Changa One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Changa One'), local('ChangaOne'), url(https://fonts.gstatic.com/s/changaone/v9/QmTOgNNWM9ly3K3B2X29HPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'), url(https://fonts.gstatic.com/s/changaone/v9/QmTOgNNWM9ly3K3B2X29HBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Changa One';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Changa One Italic'), local('ChangaOne-Italic'), url(https://fonts.gstatic.com/s/changaone/v9/wJVQlUs1lAZel-WdTo2U9-gdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), url(https://fonts.gstatic.com/s/changaone/v9/wJVQlUs1lAZel-WdTo2U93hCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}

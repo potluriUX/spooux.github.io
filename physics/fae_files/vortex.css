@@ -1,0 +1,642 @@
+@charset "utf-8";
+
+/* Betcha can't eat just one! */
+
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English);
+
+/* core styles */
+
+html { background-image: url(iris.png), url(vortex.jpg); background-position: 0vw -12vw; background-repeat: no-repeat; background-size: 100vw; width: 100%; height: 100%; }
+
+body { 
+/*  font-size: 2vw;*/
+  width:   90%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  margin: 0.000em auto 0.000em auto;
+  padding: 0.000em;
+  text-rendering: optimizelegibility;
+ -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+     -ms-text-size-adjust: none;
+      -o-text-size-adjust: none;
+}
+
+h1, h2, h3, h4
+           { line-height: 1.000em; }
+h1         { font-size: 1.666em; text-align: center; margin: 1.000em 0.000em; }
+h2         { font-size: 1.333em; text-align: left;   margin: 1.500em 0.000em; }
+h3, h4     { font-size: 1.000em; text-align: left;   margin: 1.666em 0.000em; text-transform: lowercase; } /* regular use on practice solutions - special use on newton-first and isotopes discussion pages */
+
+img, embed { background-color: rgb(255,255,255); display: block; margin: auto !important; }
+
+li         { text-align: left; }
+p          { text-align: justify; margin: 1.000em 0.000em 1.000em 0.000em; width: 100%; }
+dt         { margin: 1.000em 0.000em 0.000em 0.000em; }
+li, p, td, dt, dd
+           { line-height: 1.500em; }
+
+sub, sup   { font-size: 67%; line-height: 0.000em; white-space: nowrap; }
+
+table      { border-spacing: 0.000em; margin: 0.000em auto 0.000em auto; padding: 0.000em; text-align: center; }
+td, th     { text-align: center; padding: 0.000em; margin: 0.000em; }
+th         { white-space: nowrap; }
+caption    { caption-side: top; }
+
+a          { text-decoration: none; }
+em         { text-decoration: underline !important; font-style: inherit !important; }
+
+/* font families - The New York Times uses Georgia. */
+
+body,
+.nonmaths,
+table.maths td.nonmaths { font-family: "Neue Haas Grotesk", Helvetica, Arial, sans-serif; }
+blockquote,
+.quoteblock,
+table.archaic,
+blockquote h1,
+.quoteblock h1,
+table.archaic h1,
+.maths,
+table.nonmaths td.maths,
+table.where td:nth-child(odd) { font-family: "Palatino Nova", Palatino, "Book Antiqua", serif; }
+pre,
+code,
+.maud,
+.statuscode { font-family: Courier, "Courier New", monospace; font-size: 80%; line-height: 1.000em; text-align: left; }
+.title,
+.subtitle { font-family: "IM Fell English", serif; line-height: 0.666em; }
+
+/* miscellaneous special - The Queen says "No" to pot-smoking FBI men. */
+
+p.inline                 { width: 80vw; margin: 1.500em auto 1.500em auto; text-align: center; }
+p.inline embed           { width: 80vw; height: 45vw; }
+p.inline img             { width: auto; height: 45vw; }
+
+.float-left              { float: left;  margin: 0.000em 1.000em 0.250em 0.000em; text-align: center; }
+.float-right,
+.teeshirt                { float: right; margin: 0.000em 0.000em 0.250em 1.000em; text-align: center; }
+
+.hidden                  { display: none; }
+.problembox              { margin: 0.000em -1.000em 0.000em -1.000em; padding: 1.000em; overflow: visible; line-height: 1.500em; }
+.vanish                  { opacity: 0; }
+
+.teeshirt                { width: 11.200em; }
+.teeshirt img            { width: 11.200em; height: 11.200em; }
+
+/* image galleries */
+
+table.gallery2,          table.gallery3,          table.gallery4,          table.gallery5          { width: 100%; }
+table.gallery2 td,       table.gallery3 td,       table.gallery4 td,       table.gallery5 td       { margin: 0.000em; padding: 0.500em; }
+table.gallery2 td img,   table.gallery3 td img,   table.gallery4 td img,   table.gallery5 td img,
+table.gallery2 td embed, table.gallery3 td embed, table.gallery4 td embed, table.gallery5 td embed { margin: 0.000em; }
+
+table.gallery2 td { width: 50%; }
+table.gallery3 td { width: 33%; }
+table.gallery4 td { width: 25%; }
+table.gallery5 td { width: 20%; }
+
+table.gallery2 td table td,
+table.gallery3 td table td,
+table.gallery4 td table td,
+table.gallery5 td table td { width: auto; } /* for maths inside of galleries */
+
+.gallery2 img.hd, .gallery2 embed.hd,
+.gallery3 img.hd, .gallery3 embed.hd,
+.gallery4 img.hd, .gallery4 embed.hd,
+.gallery5 img.hd, .gallery5 embed.hd { width: 100%; }
+
+.gallery2 img.sd, .gallery2 embed.sd,
+.gallery3 img.sd, .gallery3 embed.sd,
+.gallery4 img.sd, .gallery4 embed.sd,
+.gallery5 img.sd, .gallery5 embed.sd { width: 94%; }
+
+.gallery2 img.sp, .gallery2 embed.sp,
+.gallery3 img.sp, .gallery3 embed.sp,
+.gallery4 img.sp, .gallery4 embed.sp,
+.gallery5 img.sp, .gallery5 embed.sp { width: 72%; }
+
+.gallery3 img.teeshirt, .gallery4 img.teeshirt, .gallery5 img.teeshirt,
+.gallery2 img.sq, .gallery2 embed.sq,
+.gallery3 img.sq, .gallery3 embed.sq,
+.gallery4 img.sq, .gallery4 embed.sq,
+.gallery5 img.sq, .gallery5 embed.sq { width: 88%; }
+
+img.galleryexceptional {  } /* It's Thunderdome! It's only used on interference-sound. */
+
+/* Why must I sit at this uncomfortable? */
+
+table.vibrant                      { margin-top: 1.500em; margin-bottom: 2.500em; line-height:1.500em; }
+li table.vibrant                   { margin-top: 0.250em; margin-bottom: 0.750em; } /* encouraging tighter spacing in hw problems */
+table.vibrant caption              { padding: 0.000em 0.000em 0.500em 0.000em; }
+table.vibrant th                   { padding: 0.500em 0.500em 0.500em 0.500em; white-space: nowrap; }
+table.vibrant td                   { padding: 0.500em 0.125em 0.500em 0.125em; }
+table.vibrant td:first-child       { padding-left: 0.500em; }
+table.vibrant td:last-child        { padding-right: 0.500em; }
+
+table.vibrant table                { border: none; }
+table.vibrant table td             { border: none; }
+table.vibrant table th             { border: none; }
+
+table.vibrant caption.notabene { caption-side: bottom; padding: 0.500em 0.500em 0.000em 0.500em; text-align: left; } /* for smaller, simpler footnotes */
+
+table.vibrant caption.notabene table                    { float: left; width: 100%; } /* for tables with multiple footnotes */
+table.vibrant caption.notabene table td                 { background-color: transparent; padding-bottom: 0.000em; padding-top: 0.000em; vertical-align: top; }
+table.vibrant caption.notabene table td:nth-child(odd)  { text-align: right; min-width:  5%; padding-right: 0.500em; }
+table.vibrant caption.notabene table td:nth-child(even) { text-align: left;  min-width: 45%; }
+
+/* archaic group */
+
+blockquote                { margin: 2.000em auto 2.000em auto; padding: 1.750em 2.000em 1.250em 2.000em; width: 82.000%; } /* same width as .roygbiv, etc. */
+blockquote p              { margin: 0.000em 0.000em 1.000em 0.000em; padding: 0.000em; }
+blockquote p.source,
+table.archaic td.source   { margin: 0.000em; text-align: right; }
+blockquote p.inline,
+blockquote p.inline img   { height: 40.5vw; }
+blockquote p.inline       { width:  72.0vw; } /* inline images need to be smaller in a blockquote */
+
+.quoteblock               { margin: 0.000em; padding: 0.000em 2.000em 0.000em 2.000em; }
+
+table.archaic             { width: 100%; }
+table.archaic td          { text-align: left; vertical-align: top; }
+table.archaic th h1,
+table.archaic th h2,
+table.archaic th h3       { text-align: center; font-variant: small-caps; font-weight: normal; white-space: normal; text-shadow: none; margin-left: 0em; margin-right: 0em; }
+table.archaic th h1       { font-size: 1.250em; padding: 1.250em 0.000em 1.250em 0.000em; letter-spacing: 0.500em; text-transform: uppercase; }
+table.archaic th h2       { font-size: 1.125em; padding: 1.000em 0.000em 1.000em 0.000em; letter-spacing: 0.500em; text-transform: capitalize; }
+table.archaic th h3       { font-size: 0.875em; padding: 0.000em 0.000em 0.000em 0.000em; letter-spacing: 0.250em; text-transform: lowercase; }
+table.archaic th h1 small,
+table.archaic th h2 small { font-size: 50%; letter-spacing: 0.25em; }
+table.archaic td.outercol { width: 46%; }
+table.archaic td.innercol { width: 8%; }
+
+table.archaic td .maths td { text-align: center; vertical-align: middle; }
+
+/* maths group */ 
+
+.maths,
+.nonmaths                       { white-space: nowrap; text-transform: none !important; }
+
+p.maths,
+p.nonmaths                      { text-align: center; }
+
+table.maths    td,
+table.nonmaths td               { padding: 0.000em !important; margin: 0.000em !important; white-space: nowrap; }
+table.maths    td.split,
+table.nonmaths td.split         { font-size: 1.333em; line-height: 1.000em; text-align:left !important; }
+table.maths    td.split sub,
+table.nonmaths td.split sub,
+table.maths    td.split sup,
+table.nonmaths td.split sup     { font-size: 51%; }
+table.maths    td.absleft,
+table.nonmaths td.absleft       { border-left-color: rgb(  0,  0,  0) !important; border-left-style: solid !important; border-left-width: 0.083em !important; border-radius: 0.000em !important; }
+table.maths    td.absright,
+table.nonmaths td.absright      { border-right-color: rgb(  0,  0,  0) !important; border-right-style: solid !important; border-right-width: 0.083em !important; border-radius: 0.000em !important; }
+table.maths    td.solidus,
+table.nonmaths td.solidus       { border-bottom-color: rgb(  0,  0,  0) !important; border-bottom-style: solid !important; border-bottom-width: 0.083em !important; border-radius: 0.000em !important; }
+table.maths    td.spacer,
+table.nonmaths td.spacer        { width: 4.000em; }
+
+table.maths tr,
+table.maths tr td               { background-color: transparent !important; border-radius: 0.000em !important; } /* always boring, even when nested */
+
+table.maths    td.limupper      { font-size: 75%; line-height: 75%; text-align: right; vertical-align: bottom; }
+table.maths    td.limlower      { font-size: 75%; line-height: 75%; text-align: left; vertical-align: top; }
+
+table.vibrant table.maths td,
+table.vibrant table.nonmaths td { border: none; background-color: transparent !important; }
+
+
+table.where                     { width: 100%; }
+table.where td                  { vertical-align: text-top; }
+table.where td:nth-child(odd)   { text-align: right; width: 10%; white-space: nowrap; }
+table.where td:nth-child(even)  { text-align: left;  width: 90%; white-space: normal; }
+
+.maths big                      { font-size: 2.000em; }
+
+/* table of contents */
+
+.toc ol                           { margin-left: 4.000em; padding-left: 0.000em; }
+.toc ol li                        { font-weight: bold; line-height: 4.000em; }
+.toc ol li ol                     {  }
+.toc ol li ol li                  { font-weight: normal; line-height: 2.000em; }
+.toc ol li ol li ol               {  }
+.toc ol li ol li ol li            { font-weight: normal; line-height: 1.500em; }
+
+.toc ol {
+    counter-reset: item;
+}
+.toc ol li {
+    display: block;
+    position: relative;
+}
+.toc ol li:before {
+    content: counters(item, ".")".";
+    counter-increment: item;
+    position: absolute;
+    margin-right: 100%;
+    right: 0.5000em; /* space between number and text */
+}
+
+/* page parts */ 
+
+.head1 {  }                        /* title and subtitle */
+.head2 { display: none; }          /* unused */
+.head3 { white-space: nowrap; text-align: center;
+          margin-left: -2.000em;
+         margin-right: -2.000em; } /* page name */
+.head4 { margin-bottom: 1.500em; } /* navigator */
+
+.foot4 { margin:        1.500em; } /* navigator */
+.foot3 {  }                        /* add this hole */
+.foot2 {  }                        /* signature */
+.foot1 {  }                        /* fat foot toc a.k.a. toe */
+
+/* header */
+
+.title,
+.subtitle  { font-variant: small-caps !important; font-weight: normal !important; }
+.header    { margin: 0.000em -2.000em 0.000em -2.000em; padding: 0.000em; }
+.title     { margin: 1.000em 0.000em 0.000em 0.000em; letter-spacing: 0.250em; text-align: center; font-size: 2.500em; }
+.subtitle  { margin: 1.000em 2.000em 1.000em 0.000em; letter-spacing: 0.250em; text-align: right; }
+
+.bar                         { width: 100%; height: 2.500em; overflow: hidden; padding: 0.000em; text-transform: lowercase; }
+.bar ul                      { width: 100%; line-height: 0.000em; margin: 0.000em auto 0.000em auto; padding: 0.50em 10% 0.50em 10%; }
+.bar ul li                   { border-left: solid; border-width: 0.111em; border-color: rgb(118,128,132); overflow: hidden;
+                               display: inline; float: left; margin: 0.000em; padding: 0.000em; text-align: center; width: 10%; }
+.bar ul li:first-child       { border: none; }
+.bar ul li:last-child        { border: none; width: 27%; height: 1.500em; }
+
+/* Google search in bar. Do I really need any of this? */
+
+#___gcse_0,
+gsc-control-searchbox-only,
+gsc-control-searchbox-en,
+form.gsc-search-box,
+table.gsc-search-box,
+table.gsc-branding           { height: 100%; margin-top: 0.000em; margin-bottom: 0.000em; vertical-align: middle; }
+
+/* footer */
+
+table.signature td:first-child { text-align:left; width: 6em; height: 8em; }
+.signature img               { border: none !important; border-radius:100%; width: 4em; height: 4em; }
+p.sababu                     { display: none; }
+
+.toe                         { font-size: 0.666em; text-align: left; text-transform: lowercase; }
+.toe table                   { width: 100%; }
+.toe tr                      { vertical-align: top; }
+.toe td                      { width: 25%; overflow: visible; white-space: nowrap; padding-bottom: 2.000em; padding-right: 1.000em; }
+.toe li                      { list-style: none; line-height: 1.000em; }
+.toe ol                      { margin: 0.000em; padding: 0.000em; }
+.toe ol li                   { margin-top: 1.000em; margin-left: 0.000em; padding-left: 0.000em; font-weight: bold; }
+.toe ol li ol                {  }
+.toe ol li ol li             { margin-top: 1.000em; font-weight: normal; }
+.toe ol li ol li ol li       { margin-top: 0.000em; margin-left: 1.500em; }
+
+/* horizontal lists */
+
+ul.horizontal                { margin: 0.000em; padding: 0.000em; text-align: center; line-height: 1.000em; font-size: 1.000em; }
+ul.horizontal li             { margin: 0.000em; padding: 0.000em 0.500em 0.000em 0.500em; display: inline; vertical-align: text-bottom; 
+                               border-left: solid; border-width: 0.083em; border-color: rgb(  0,  0,  0); color: rgb(184,184,184); }
+ul.horizontal li.first       { border: none; }
+ul.horizontal li.prev        { border-left: none; border-right: double; border-color: rgb(  0,  0,  0); }
+ul.horizontal li.next        { border-left: double;                     border-color: rgb(  0,  0,  0); }
+ul.horizontal li.prev:before { content: "\261c\00a0"; color: rgb(  0,  0,  0); font-size: 150%; line-height: 66%; vertical-align: -33%; }
+ul.horizontal li.next:after  { content: "\00a0\261e"; color: rgb(  0,  0,  0); font-size: 150%; line-height: 66%; vertical-align: -33%; }
+
+ul.notabene                  { list-style: none; }
+ul.notabene li:before        { content: "\261e"; margin-left: -1.500em; margin-right: 0.500em; }
+
+/* colors */
+
+html             {                         
+/*    background-color: rgb(248,248,248); }   very light gray */*/
+     a:link      { color: rgb(  0,  0,222); background-color: transparent; }        /* medium blue */
+     a:visited   { color: rgb(  0, 51,153); background-color: transparent; }        /* dark blue */
+     a:hover     { color: rgb(151,  0,  0); background-color: rgb(255,255,173); }   /* medium red on light yellow */
+     a:active    { color: rgb(255,  0,  0); background-color: rgb(255,255,  0); }   /* bright red on bright yellow */
+
+.bar a:link,
+.bar a:active,
+.bar a:visited   { color: rgb(255,255,255); }                                       /* white text */
+.bar a:hover     { color: rgb(255, 99,101); background-color: transparent; }        /* medium red text */
+
+.keynom          {                          }                                      /* dark blue - same as a:link*/
+.keyother        { color: rgb(153,  0, 51); }                                      /* dark red */
+.keyword, dt     { color: rgb(255,  0, 51); }                                      /* bright red */
+
+.error,
+.negative        { color: rgb(255,  0,  0); white-space: nowrap; }                  /* red text */
+.toe ol li ol li ol li:hover,
+.highlighter     {                          background-color: rgb(255,255,170); }   /* light yellow */
+.problembox      { color: rgb(  3,  2, 47); background-color: rgb(229,233,241); }   /* very dark blue on blueish gray */
+
+blockquote,
+.quoteblock,
+table.archaic        { color: rgb( 42, 33, 15); background-color: rgb(254,238,195); text-decoration: none; } /* sepia on parchment */
+table.archaic a:link,
+table.archaic a:visited,
+blockquote a:link,
+blockquote a:visited { color: rgb( 42, 33, 15); background-color: transparent; } /* sepia on transparent */
+table.archaic a:hover,
+blockquote a:hover   { color: rgb(151,  0,  0); background-color: rgb(251,251,173); } /* medium red on light yellow */
+table.archaic a:active,
+blockquote a:active  { color: rgb(255,  0,  0); background-color: rgb(255,255,  0); } /* bright red on bright yellow */
+
+table.archaic th h1       {           border-bottom: 0.111em solid rgba( 47, 31, 19,0.850);
+                                         border-top: 0.111em solid rgba( 47, 31, 19,0.850); } /* sepia horizontal line */
+
+table.vibrant td.even,
+table.vibrant tr:nth-child(even) td            { background-color: rgba(255,255,255,0.850); } /* white */
+table.vibrant td.odd,
+table.vibrant tr:nth-child(odd) td             { background-color: rgba(218,224,229,0.850); } /* light blue gray */
+table.vibrant tr:hover td                      { background-color: rgba(255,151,151,1.000); } /* light red */
+table.vibrant td                    { border-bottom: 0.083em solid rgba(182,187,191,0.850); } /* darker blue gray */
+.bar,
+table.vibrant th      { color: rgb(255,255,255); background-color: rgba( 43, 53, 59,0.850); } /* white on blue black */
+table.vibrant tr:last-child td      { border-bottom: none; }
+
+/* box corners */
+
+td.gsc-input input.gsc-input,
+td.gsc-search-button input.gsc-search-button,
+.bar,
+blockquote,
+.quoteblock,
+.problembox,
+.rounded,
+p.spectrum img,
+table.archaic,
+table.rygb, table.rygbv, table.roygbv, table.roygbiv,
+table.vibrant { border-radius: 0.333em; }
+
+table.vibrant tr:first-child th:first-child { border-radius: 0.333em 0.000em 0.000em 0.000em; }
+table.vibrant tr:first-child th:last-child  { border-radius: 0.000em 0.333em 0.000em 0.000em; }
+table.vibrant tr:first-child,
+table.vibrant tr:first-child th:only-child  { border-radius: 0.333em 0.333em 0.000em 0.000em; }
+table.vibrant tr:last-child td:first-child,
+table.vibrant tr:last-child th:first-child  { border-radius: 0.000em 0.000em 0.000em 0.333em; }
+table.vibrant tr:last-child td:last-child,
+table.vibrant tr:last-child th:last-child   { border-radius: 0.000em 0.000em 0.333em 0.000em; }
+table.vibrant tr:last-child,
+table.vibrant tr:last-child td:only-child,
+table.vibrant tr:last-child th:only-child  { border-radius: 0.000em 0.000em 0.333em 0.333em; }
+
+table.rygb td:first-child,
+table.rygbv td:first-child,
+table.roygbv td:first-child,
+table.roygbiv td:first-child { border-radius: 0.333em 0.000em 0.000em 0.333em; }
+table.rygb td:last-child,
+table.rygbv td:last-child,
+table.roygbv td:last-child,
+table.roygbiv td:last-child { border-radius: 0.000em 0.333em 0.333em 0.000em; }
+
+.midwoodsig img { border-radius: 0em; }
+
+/* box shadows */
+
+table.aetofdr,
+.amazon,
+.calendar,
+.embeddedvideo iframe,
+.random,
+.shadow,
+img,
+embed,
+.entry .amzn_wdgt,
+table.vibrant { box-shadow: 0.000em 0.125em 0.250em rgba(  0,  0, 24,0.500); } /* shadowed */
+
+.bar          { box-shadow: 0.000em 0.125em 0.250em rgba(  0,  0, 24,0.500),
+                      inset 0.000em 0.250em 0.250em rgba(248,248,255,0.500); } /* pillowed */
+
+blockquote,
+.quoteblock,
+table.archaic { box-shadow: 0.000em 0.125em 0.250em rgba(  0,  0, 24,0.500),
+                      inset 0.000em 0.000em 3.000em rgba( 24,  0,  0,0.250); } /* browned edges */
+
+.problembox   { box-shadow: 0.000em 0.125em 0.250em rgba(  0,  0, 24,0.500),
+                      inset 0.000em 0.000em 6.000em rgba(248,248,255,0.500); } /* faded edges */
+
+/* box no shadows */
+
+blockquote table.archaic,
+.quoteblock table.archaic,
+table.vibrant td img,
+table.vibrant td embed,
+img.amazon,
+.amazon img,
+.wdgt_ft img,
+.gsc-control-cse img,
+img.gsc-control-cse,
+img.teeshirt,
+.teeshirt img,
+img.icon,
+.icon img,
+embed.icon,
+.icon embed,
+.icon { background-color: transparent !important; border: none !important; border-radius: 0.000em !important; box-shadow: none !important; }
+
+/* Warm glowing warming glow */
+/*
+h1, h2, .title, .subtitle, ul.horizontal { text-shadow: 0.000em  0.000em  0.111em rgb(255,255,255), 0.000em  0.000em  0.999em rgb(255,255,255), 0.000em  0.000em  0.888em rgb(255,255,255),
+     0.000em  0.000em  0.777em rgb(255,255,255), 0.000em  0.000em  0.666em rgb(255,255,255), 0.000em  0.000em  0.555em rgb(255,255,255),
+     0.000em  0.000em  0.444em rgb(255,255,255), 0.000em  0.000em  0.333em rgb(255,255,255), 0.000em  0.000em  0.222em rgb(255,255,255);
+}*/
+
+/* Unflavored for me! */
+
+h2 a:link,    .banner a:link,    .signature a:link,    .toe a:link,      a:link img    { color: rgb(  0,  0,  0); }
+h2 a:visited, .banner a:visited, .signature a:visited, .toe a:visited,   a:visited img { color: rgb(  0,  0,  0); }
+h2 a:hover,   .banner a:hover,   .signature a:hover,   .toe a:hover,     a:hover img   { color: rgb(153,  0,  0); }
+h2 a:active,  .banner a:active,  .signature a:active,  .toe a:active,    a:active img  { color: rgb(255,  0,  0); }
+
+/* 
+EXTERNALLY DEMANDED STYLES. EXTERNALLY DEMANDED STYLES. EXTERNALLY DEMANDED STYLES.
+                _                                   _ 
+   ___  __  __ | |_    ___   _ __   _ __     __ _  | |
+  / _ \ \ \/ / | __|  / _ \ | '__| | '_ \   / _` | | |
+ |  __/  >  <  | |_  |  __/ | |    | | | | | (_| | | |
+  \___| /_/\_\  \__|  \___| |_|    |_| |_|  \__,_| |_|
+                                                      
+http://patorjk.com/software/taag/#p=display&h=0&f=Standard&t=external
+*/
+
+/* AddThis */
+
+.share { margin: 0em auto 0em auto; width: 320px; }
+
+.addthis_button_preferred_1, .addthis_button_preferred_2, .addthis_button_preferred_3, .addthis_button_preferred_4, .addthis_button_preferred_5, .addthis_button_preferred_6, .addthis_button_preferred_7,
+.addthis_button_compact, .addthis_button_email, .addthis_button_favorites, .addthis_button_print,
+.addthis_button_aolmail, .addthis_button_baidu, .addthis_button_blogger, .addthis_button_delicious, .addthis_button_digg, .addthis_button_evernote, .addthis_button_facebook, .addthis_button_facebook_like, .addthis_button_foursquare, .addthis_button_gmail, .addthis_button_google, .addthis_button_google_plusone, .addthis_button_google_plusone_share, .addthis_button_googletranslate, .addthis_button_hotmail, .addthis_button_instapaper, .addthis_button_kindleit,
+.addthis_button_orkut, .addthis_button_pinterest, .addthis_button_printfriendly, .addthis_button_reddit, .addthis_button_stumbleupon, .addthis_button_tumblr, .addthis_button_twitter, .addthis_button_vk, .addthis_button_wordpress, .addthis_button_yahoomail, .addthis_button_youmob
+ { width: 32px !important; height: 32px !important; margin: 4px !important; padding: 0px !important; overflow: hidden !important; }
+
+.share_post { margin: 0.000em auto 4.000em auto; width: 9.000em; height: 1.000em; }
+
+.share_post .addthis_button_preferred_1, .share_post .addthis_button_preferred_2, .share_post .addthis_button_preferred_3, .share_post .addthis_button_preferred_4, .share_post .addthis_button_preferred_5, .share_post .addthis_button_preferred_6, .share_post .addthis_button_preferred_7,
+.share_post .addthis_button_compact, .share_post .addthis_button_email, .share_post .addthis_button_favorites, .share_post .addthis_button_print,
+.share_post .addthis_button_aolmail, .share_post .addthis_button_baidu, .share_post .addthis_button_blogger, .share_post .addthis_button_delicious, .share_post .addthis_button_digg, .share_post .addthis_button_evernote, .share_post .addthis_button_facebook, .share_post .addthis_button_facebook_like, .share_post .addthis_button_foursquare, .share_post .addthis_button_gmail, .share_post .addthis_button_google, .share_post .addthis_button_google_plusone, .share_post .addthis_button_google_plusone_share, .share_post .addthis_button_googletranslate, .share_post .addthis_button_hotmail, .share_post .addthis_button_instapaper,
+.share_post .addthis_button_kindleit, .share_post .addthis_button_orkut, .share_post .addthis_button_pinterest, .share_post .addthis_button_printfriendly, .share_post .addthis_button_reddit, .share_post .addthis_button_stumbleupon, .share_post .addthis_button_tumblr, .share_post .addthis_button_twitter, .share_post .addthis_button_vk, .share_post .addthis_button_wordpress, .share_post .addthis_button_yahoomail, .share_post .addthis_button_youmob
+ { width: 16px !important; height: 16px !important; margin: 2px !important; padding: 0px !important; overflow: hidden !important; }
+
+.addthis_hole { width: 320px !important; height: 40px !important; overflow: hidden !important; }
+
+/* Amazon */
+
+.entry .amzn_wdgt,
+.amazon     { width: 621px; margin: 0.000em auto 0.000em auto; border: solid 1em rgb(255,255,255); overflow: hidden; } /* This width must be in pixels. */
+.wdgt_ft img,
+.amazon img { border-radius: 0.000em; }
+
+/* WordPress */
+
+.wp-post-head,           .wp-post-foot,
+.wp-post-head a:link,    .wp-post-foot a:link,
+.wp-post-head a:visited, .wp-post-foot a:visited { color: rgb(184,184,184); text-transform: lowercase; }
+.wp-post-head { text-align: left; }
+.wp-post-foot { margin: 0.000em auto 1.000em auto; overflow: visible; text-align: center; text-indent: -1.875em; white-space: nowrap; width: 9.000em; height: 1.000em; }
+
+
+/* xkcd */
+
+/* Divide pixel count by 10 to get vw value -- usually. */
+
+img.xkcd { border: 1vw solid white; }
+
+/* YouTube, Vimeo, Cracked */
+
+.embeddedvideo { margin: 1.5em auto 1.5em auto; text-align: center; }
+.embeddedvideo object.hd,
+.embeddedvideo iframe.hd { width: 80vw; height: 45vw; } /* 16x9 */
+.embeddedvideo object.sd,
+.embeddedvideo iframe.sd { width: 60vw; height: 45vw; } /*  4x3 */
+.embeddedvideo object.sp,
+.embeddedvideo iframe.sp { width: 45vw; height: 60vw; } /*  3x4 */
+
+/* Google Search */
+
+.gs-no-results-result,
+.gs-snippet,
+.gs-error-result,
+.gs-snippet,
+#adBlock { background-color: transparent !important; border: none !important; }
+
+.cse,
+.gsc-result,
+.gsc-results,
+.gsc-control-cse { background-color: transparent !important; border: none !important; padding: 0.000em !important; }
+
+td.gsc-table-cell-thumbnail,
+td.gs-promotion-image-cell,
+.gsc-above-wrapper-area,
+.gsc-result-info-container,
+.gsc-cursor-box { display: none; }
+
+.gsc-table-result td { text-align: left; }
+
+.gs-result,
+.gs-title,
+.gs-snippet,
+.gs-visibleUrl,
+.gs-visibleUrl-long,
+.gs-visibleUrl-short,
+.gs-bidi-start-align,
+.gsc-results,
+.gsc-search-box,
+.gsc-control-searchbox-only,
+.gsc-control-searchbox-en,
+.gsc-control-cse,
+.gsc-results,
+.gsc-webResult,
+.gsc-url-bottom,
+.gsc-resultsRoot,
+.gsc-tabData,
+.gsc-control-cse,
+.gsc-tabdActive,
+.gsc-resultsRoot,
+.gsc-tabData gsc-tabdActive,
+.gsc-webResult,
+.gsc-table-result,
+.gsc-table-cell-thumbnail,
+.gsc-table-cell-thumbnail-left,
+.gsc-table-cell-snippet-close { font-family: "Neue Haas Grotesk", Helvetica, Arial, sans-serif !important; font-size: 2vw !important; font-weight: normal !important;
+                                line-height: 1.500em !important; height: auto !important; width: auto !important;
+                                border: 0.000em; margin: 0.000em !important; padding: 0.000em !important; border-collapse: collapse !important; }
+.gs-snippet b { font-weight: normal !important; background-color: rgb(255,255,170) !important; }
+.gs-title { margin-top: 1.000em !important; }
+
+.gsc-url-bottom,
+.gs-visibleUrl,
+.gs-visibleUrl-long,
+.gs-visibleUrl-short { color: rgb(184,184,184) !important; }
+
+/* Google Error Search */
+
+h3 b, li b { font-weight: normal; }
+li.search-goog { text-transform: lowercase; display: inline; }
+
+/*
+ STYLES THAT ONLY APPEAR ONCE. STYLES THAT ONLY APPEAR ONCE. STYLES THAT ONLY APPEAR ONCE.
+        _                   _          _                         
+  ___  (_)  _ __     __ _  | |   ___  | |_    ___    _ __    ___ 
+ / __| | | | '_ \   / _` | | |  / _ \ | __|  / _ \  | '_ \  / __|
+ \__ \ | | | | | | | (_| | | | |  __/ | |_  | (_) | | | | | \__ \
+ |___/ |_| |_| |_|  \__, | |_|  \___|  \__|  \___/  |_| |_| |___/
+                    |___/                                        
+http://patorjk.com/software/taag/#p=display&h=0&f=Standard&t=singletons
+*/
+
+/* error pages */
+
+table.statuscode td             { text-align: left; vertical-align: top; }
+table.statuscode td:first-child { text-align: right; padding-right: 1em; }
+
+/* reference table */ 
+
+table.reference                  { width: 100%; }
+table.reference td               {  }
+table.reference th               { font-weight: normal; text-decoration: underline; width: 25%; }
+
+/* pascal's triangle */
+
+.pascal td { width: 2.500em; height: 1.500em; }
+
+/* einstein's letter to roosevelt */
+
+table.aetofdr        { font-size: 2vw; background-color: rgb(255,255,255); margin: 3.000em; }
+table.aetofdr td pre { line-height: 1.250em; padding: 3.000em 0.000em 0.000em 6.000em; }
+table.aetofdr img    { display: inline; }
+
+/* ... and then there's Maude ... */
+
+.maud { font-size: 2vw; line-height: 1.500em; margin: auto; text-indent: 5.000em; width: 36.000em; }
+p.maud { margin-bottom: 1.500em; }
+
+/* http://physics.info/qcd/ */
+
+p.finnegans:before { content: "\2014\00a0"; }
+p.finnegans { text-indent: -1.250em; }
+p.wake { text-indent: 0.000em; }
+
+/* http://physics.info/rotational-statics/ */
+
+ol.rotatesigns { list-style-type: none; }
+ol.rotatesigns li:first-child:before { content: "\293D\00a0"; }
+ol.rotatesigns li:last-child:before { content: "\293C\00a0"; }
+
+/* http://physics.info/color/
+   http://physics.info/interference-light/ */
+
+table.rygb,
+table.rygbv,
+table.roygbv,
+table.roygbiv    { width:  82.000%; height: 6.000vw; } /* same width as blockquote */
+table.rygb td    { width:  25.000%; }
+table.rygbv td   { width:  20.000%; }
+table.roygbv td  { width:  16.666%; }
+table.roygbiv td { width:  14.286%; }
+p.spectrum       { width:  82.000%; margin-left: auto; margin-right: auto; text-align: center; } /* same width as blockquote */
+p.spectrum img   { width: 100.000%; height: 6.000vw; }
+
+/* No Condition Is Permanent. */

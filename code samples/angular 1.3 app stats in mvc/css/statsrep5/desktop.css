@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* Style for Desktops */
+
+.wrapper {
+	width: 95%;
+	max-width: 1260px;
+	min-width: 780px;
+	margin: 0 auto;
+}
+
+.footer .legal {
+}
+
+.footer .footerLinks {
+	
+}
+
+/* Nav Styles */
+.topNav2 .navBtn {
+	font-size: 0.9em;
+}
+
+/* Type Styles */
+
+
+/* Report Styles */
+
+.tabGrp {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#rptData {
+	font-size: 1em;
+}
+
+#rptData .dataTbl {
+	margin: 0px 2% 0px 0px;
+	float: left;
+	width: 73%;
+}
+#rptData #prodStats {
+	margin: 0;
+	float: left;
+	width: 24%;
+}
